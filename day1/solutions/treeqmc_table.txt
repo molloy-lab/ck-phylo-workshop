@@ -1,0 +1,14 @@
+NOTE: species tree contains A,B|C,D and q1 = freq(A,B|C,D)
+A;B;C;D;q1;q2;q3;EN;BRLN
+"rhePen,aptRow,droNov,casCas,rheAme,aptHaa,cryCin,anoDid,eudEle,aptOwe,notPer,tinGut,";"strCam,";"";"galGal,";0;0;0;0;0
+"anoDid,eudEle,notPer,tinGut,cryCin,";"rhePen,rheAme,casCas,aptRow,aptOwe,droNov,aptHaa,";"strCam,";"galGal,";0.649951;0.177886;0.172163;10000;0.644218
+"eudEle,notPer,tinGut,cryCin,";"anoDid,";"rhePen,rheAme,casCas,aptRow,aptOwe,droNov,aptHaa,";"strCam,galGal,";0.959382;0.0199286;0.0206893;10000;2.798082
+"tinGut,cryCin,";"eudEle,notPer,";"anoDid,";"strCam,rhePen,aptRow,droNov,casCas,galGal,aptOwe,rheAme,aptHaa,";0.9878;0.0052;0.007;10000;4.000854
+"cryCin,";"tinGut,";"eudEle,notPer,";"strCam,rhePen,aptRow,droNov,casCas,galGal,aptOwe,rheAme,aptHaa,anoDid,";0.92735;0.0364;0.03625;10000;2.216637
+"notPer,";"eudEle,";"tinGut,cryCin,";"strCam,rhePen,aptRow,droNov,casCas,galGal,aptOwe,rheAme,aptHaa,anoDid,";0.6186;0.1876;0.1938;10000;0.558441
+"casCas,aptRow,aptOwe,droNov,aptHaa,";"rhePen,rheAme,";"anoDid,eudEle,notPer,tinGut,cryCin,";"strCam,galGal,";0.338919;0.330358;0.330723;10000;0.008414
+"aptRow,aptOwe,aptHaa,";"casCas,droNov,";"rhePen,rheAme,";"strCam,eudEle,galGal,notPer,tinGut,cryCin,anoDid,";0.613907;0.192774;0.193319;10000;0.546212
+"aptOwe,aptHaa,";"aptRow,";"casCas,droNov,";"strCam,rhePen,eudEle,galGal,notPer,tinGut,rheAme,cryCin,anoDid,";0.998778;0.000783333;0.000438889;10000;6.301619
+"aptHaa,";"aptOwe,";"aptRow,";"strCam,rhePen,droNov,casCas,eudEle,galGal,notPer,tinGut,rheAme,cryCin,anoDid,";0.9561;0.0226;0.0213;10000;2.720376
+"droNov,";"casCas,";"aptRow,aptOwe,aptHaa,";"strCam,rhePen,eudEle,galGal,notPer,tinGut,rheAme,cryCin,anoDid,";0.9992;0.0003;0.0005;10000;6.725434
+"rheAme,";"rhePen,";"casCas,aptRow,aptOwe,droNov,aptHaa,";"strCam,eudEle,galGal,notPer,tinGut,cryCin,anoDid,";0.998371;0.000808571;0.00082;10000;6.014587

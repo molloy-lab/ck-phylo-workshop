@@ -1,0 +1,16 @@
+Code	Scientific_name	Common_name
+anoDid	Anomalopteryx didiformis	Little Bush Moa
+aptHaa	Apteryx haastii	Great Spotted Kiwi
+aptMan	Apteryx mantelli	North Island Brown Kiwi
+aptOwe	Apteryx owenii	Little Spotted Kiwi
+aptRow	Apteryx rowi	Okarito Brown Kiwi
+casCas	Casuarius casuarius	Southern Cassowary
+cryCin	Crypturellus cinnamomeus	Thicket Tinamou
+droNov	Dromaius novaehollandiae	Emu
+eudEle	Eudromia elegans	Elegant Crested Tinamou
+galGal	Gallus gallus	Red Junglefowl (Chicken)
+notPer	Nothoprocta perdicaria	Chilean Tinamou
+rheAme	Rhea americana	Greater Rhea
+rhePen	Rhea pennata	Lesser Rhea
+strCam	Struthio camelus	Ostrich
+tinGut	Tinamus guttatus	White-throated Tinamou
