@@ -2,7 +2,7 @@ This directory contains retrotranposon (CR1) insertion matrix from [Simmons *et 
 
 | Data | File |
 | --- | --- |
-| CR1 Presence/Absence Matrix | [`4345ratites.nex`](4345ratites.nex.gz)|
+| CR1 Presence/Absence Matrix | [`4345ratites.nex.gz`](4345ratites.nex.gz)|
 
 **IMPORANT:** To complete the lab, unzip the data matrix in this directory e.g. with the following command:
 ```
