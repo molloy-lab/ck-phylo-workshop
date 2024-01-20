@@ -2,7 +2,7 @@ This directory contains concatenated alignments and RAxML trees from [Simmons *e
 
 | Data | File |
 | --- | --- |
-| Concatenated UCE alignment | [`UCE_minus_105.phy`](UCE_minus_105.phy.gz)|
+| Concatenated UCE alignment | [`UCE_minus_105.phy.gz`](UCE_minus_105.phy.gz)|
 | Partition file for RAxML analysis | [`UCE_minus_105_partitions.txt`](UCE_minus_105_partitions.txt) |
 | RAxML UCE tree | [`UCE_minus_105_raxml.tre`](UCE_minus_105_raxml.tre) |
 
