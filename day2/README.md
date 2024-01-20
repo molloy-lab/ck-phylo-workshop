@@ -68,12 +68,12 @@ Activity D (Optional)
 Compare support values estimated using coalescent methods for some of the topologies found in the above activities
 
 * Try [CASTER](https://github.com/chaoszhang/ASTER/) with the concatenated alignment
-* Try [ASTRAL/ASTER](https://github.com/chaoszhang/ASTER/) with UCE gene trees; to learn more about the support calculations, see [Sayyari & Mirarab, 2016](https://doi.org/10.1093/molbev/msw079)
+* Try [ASTRAL/ASTER](https://github.com/chaoszhang/ASTER/) with UCE gene trees; to learn about the support calculations, see [Sayyari & Mirarab, 2016](https://doi.org/10.1093/molbev/msw079)
 
 
 Dicussion Questions
 ---
 
-1. What are the pros and cons of each type of method? 
-2. How do you think these pros/cons relate to the Palaeognathae tree and the data types explored here?
-3. What follow up work do you want to explore?
+1. What are the pros and cons of each type of method broadly speaking? How do these pros/cons relate to the Palaeognathae tree and the data types explored in this lab?
+2. This lab focused on gene tree heterogeneity due to ILS and GTEE. What are some other sources of gene tree heterogeneity? Could these be an issue for Palaeognathae? How would explore these issues further?
+3. What follow-up analyses would you want to do if you had unlimited time, money, etc?
