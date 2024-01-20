@@ -22,7 +22,7 @@ It could be fun to divide the analyses up among your neighbors so that you can c
 | Site | SVDquartets | UCE (minus 105) | |
 | | CASTER-pair | UCE (minus 105) | |
 | | CASTER-site | UCE (minus 105) | |
-| Concatenation | RAxML | UCE (minus 105) | (((((C,B1),B2),A),strCam),galGal); |
+| Concatenation | RAxML | UCE (minus 105) | `(((((C,B1),B2),A),strCam),galGal);` |
 
 
 Data
