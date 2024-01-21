@@ -4,7 +4,7 @@ Activity C: Run quartet-based summary methods
 Now we will work on reconstructing a species tree from gene trees simulated under the model species tree below.
 
 <p align="center">
-<img src="model-species-tree-v2-annotated.png" alt="model" width="100%" height="auto"/>
+<img src="model-species-tree-v2-annotated_low.png" alt="model" width="100%" height="auto"/>
 </p>
 
 The most popular quartet-based summary method is ASTRAL, which has had several versions since it was introduced in 2015 [(Mirarb *et al.*, 2014)](https://doi.org/10.1093/bioinformatics/btu462).

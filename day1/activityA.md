@@ -4,7 +4,7 @@ Activity A: Check if the model species tree is in the anomaly zone
 **Question A1:** Looking at the model species tree below, would guess that it is in the anomaly zone? Why or why not?
 
 <p align="center">
-<img src="model-species-tree-v2-annotated.png" alt="model" width="100%" height="auto"/>
+<img src="model-species-tree-v2-annotated_low.png" alt="model" width="100%" height="auto"/>
 </p>
 
 If it is in the anomaly zone, there must be (at least) one tree topology that does NOT agree with the species tree and has a higher probability under the MSC than the species tree topology. Our goal is to come up with topologies that may have a higher probability than the species tree topology.
