@@ -55,7 +55,7 @@ Group 1
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy (2023)]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
+*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
 * Note that [ASTRAL](https://github.com/chaoszhang/ASTER/) gave the same result as TREE-QMC in our analyses.
 
 
@@ -63,7 +63,7 @@ Group 2
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy (2023)]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
+*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
 * The **support quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model". It has since been implemented in TREE-QMC and a related approach has been implemented in ASTRID; see [Liu & Warnow, 2023](https://doi.org/10.1186/s13015-023-00230-6).
 * Note that support only weighting does not automatically build with ASTRAL/ASTER so we did not run it.
 
@@ -72,7 +72,7 @@ Group 3
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **length weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy (2023)]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
+*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
 * The **length quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC. It has since been implemented in TREE-QMC and a related approach has been implemented in ASTRID; see [Liu & Warnow, 2023](https://doi.org/10.1186/s13015-023-00230-6).
 * Note that length only weighting does not automatically build with ASTRAL/ASTER so we did not run it.
 
@@ -81,7 +81,7 @@ Group 4
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy (2023)]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
+*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
 * The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE); it has since been implemented in TREE-QMC.
 * Note that [ASTRAL-hybrid](https://github.com/chaoszhang/ASTER/) gave the same result as TREE-QMC-hybrid in our analyses.
 
