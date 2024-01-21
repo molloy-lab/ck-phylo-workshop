@@ -14,8 +14,9 @@ The most popular heuristic, ASTRAL, has had several versions since it was introd
 The lastest version, also called [ASTER](https://github.com/chaoszhang/ASTER/), uses a different algorithm that may be more robust to missing data.
 Recently, we introduced a new heuristic to MQSST, called [TREE-QMC](https://github.com/molloy-lab/TREE-QMC).
 TREE-QMC enables the divide-and-conquer algorithmic framework proposed by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to run directly on the input gene trees (rather than extracted quartets), enabling it scale to large data sets without subsampling quartets. 
-TREE-QMC also weights quartets based on their relevance to a current subproblem and does so in such a way that the expected frequencies under MSC are not perturbed [Han & Molloy, 2023](https://doi.org/10.1101/gr.277629.122)
-In our experiments, we have found these features make TREE-QMC at least as robust to missing data as ASTER (sometimes more robust) as well as more accurate for large trees. On the other hand, ASTER is faster when using multi-threading. Let's go ahead and try out these methods.
+TREE-QMC also weights quartets based on their relevance to a current subproblem and does so in such a way that the expected frequencies under MSC are not perturbed [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
+In our experiments, we have found these features make TREE-QMC at least as robust to missing data as ASTER (sometimes more robust) as well as more accurate for large trees. 
+On the other hand, ASTER is faster when using multi-threading. Let's go ahead and try out these methods.
 
 To run TREE-QMC, use the command:
 ```
