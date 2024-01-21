@@ -47,7 +47,7 @@ grep "galGal" treeqmc_qCF.csv | grep "cryCin" | grep "rhePen" | grep "aptRow"
 ```
 *Another Tip: Run this command in separate terminal. Otherwise, type `exit();`, grep the file, and then re-start Julia. Now you can continue with step 4 below, after loading packages and file names.*
 
-4. Load the estimated species tree topology.
+4. Load the observed qCFs and estimated species tree topology.
 ```
 gtCF = readTableCF(qf_file);
 stree = readTopology(st_file)
