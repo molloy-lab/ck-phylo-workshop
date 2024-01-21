@@ -32,7 +32,7 @@ C = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
 ```
 
 To compute the probability of these topologies under the MSC model species tree, try the following.
-1. Create a NEXUS file (e.g. `phylonet.nex`)
+1. Create a NEXUS file (e.g. `compute_loglk.nex`)
 2. Copy the text below into the file
 ```
 #NEXUS
@@ -57,7 +57,7 @@ END;
 ```
 3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, and `gt4` by combining the newick strings above
 4. Add the newick string for the model species tree
-5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar phylonet.nex`
+5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
 6. Convert the log-likelihood of each gene tree into a probability via $e^{loglik}$.
 
 **Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
