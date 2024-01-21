@@ -92,7 +92,7 @@ stfitted.loglik
 ```
 *and then continue with the analysis.*
 
-**Optional:** Repeat the tasks above taking a species tree estimated on the reduced set of 100 gene trees. Compare the results.
+**Optional:** Repeat the tasks above taking the TREE-QMC tree estimated on 100 gene trees. Compare the results to those for 10,000 gene trees.
 
 Credits
 ---
