@@ -53,7 +53,7 @@ astral --root galGal \
 
 **Optional:** Repeat the tasks above but reduce the number of gene trees from 10,000 down to 100. Compare the results.
 
-*Tip: Use the `head` command to create a new file with the first 100 gene trees from the original file. Also replace file names when running ASTRAL and TREE-QMC.
+*Tips: Use the `head` command to create a new file with the first 100 gene trees from the original file. Also replace file names when running ASTRAL and TREE-QMC.*
 
 ---
 
