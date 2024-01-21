@@ -57,4 +57,4 @@ astral --root galGal \
 
 ---
 
-(Optional) Go to **[Activity D](activityD.md)**.
+**Optional:** Go to **[Activity D](activityD.md)**.
