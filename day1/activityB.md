@@ -4,7 +4,7 @@ Activity B: Calculate expected quartet frequencies by hand
 Let's look at the model species tree below and determine the expected frequencies of quartets in the gene trees by hand. 
 
 <p align="center">
-<img src="model-species-tree-v2-annotated_low.png" alt="model" width="100%" height="auto"/>
+<img src="model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
 **Question B1:** What quartet is on species set: `galGal,cryCin,rhePen,aptRow`? What is the expected frequency of this quartet (call `q1`) in the gene trees? What is the expected frequency of the two alternative quartets (call `q2` and `q3`)?
