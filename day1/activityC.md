@@ -11,7 +11,7 @@ We will focus on heursitics for the Maximum Quartet Support Species Tree (MQSST)
 There are several benefits to quartet-based gene tree summary methods: (1) optimal solution to MQSST is a consistent estimator under the MSC [[Mirarab *et al.,* 2014]](https://doi.org/10.1093/bioinformatics/btu462), (2) they work on unrooted gene trees (so you don't have to root them0, and many fast and accurate heursitics have been developed. 
 
 The most popular heuristic, ASTRAL, has had several versions since it was introduced in 2014.
-The lastest version, also called [ASTER](https://github.com/chaoszhang/ASTER/), uses a different algorithm that may be more robust to missing data.
+The lastest version, called [ASTER](https://github.com/chaoszhang/ASTER/), uses a different algorithmic approach that may be more robust to missing data the the previous one.
 Recently, we introduced a new heuristic to MQSST, called [TREE-QMC](https://github.com/molloy-lab/TREE-QMC).
 TREE-QMC enables the divide-and-conquer algorithmic framework proposed by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to run directly on the input gene trees (rather than extracted quartets), enabling it scale to large data sets without subsampling quartets. 
 TREE-QMC also weights quartets based on their relevance to a current subproblem and does so in such a way that the expected frequencies under MSC are not perturbed [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
