@@ -20,7 +20,7 @@ Data files
 
 Before you begin
 ---
-Change into the `day1` directory and copy the files listed above into it.
+Change into the `day1` directory and copy the files listed below into it e.g. with the following commands.
 ```
 cp ../data/simulations/model-species-tree.tre .
 cp ../data/simulations/simulated-gene-trees.tre .
