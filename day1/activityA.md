@@ -62,11 +62,10 @@ END;
 
 **Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
 
-Beyond this lab
+For later e.g. on the flight home :)
 ---
 
-Consider restricting the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C) so that you can compute the probabilities of the three rooted gene trees by hand.
-
+Consider restricting the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C); this produces the following trees: 
 
 ```
 st = (((rhePen,(aptRow,droNov):0.553644):0.008906),notPer);
@@ -77,7 +76,7 @@ gt3 = (((aptRow,droNov),notPer),rhePen);
 gt4 = (((droNov,notPer),aptRow),rhePen);
 ```
 
-**Question A3:** How does this calculation differ for the balanced (or symmetric) toplogy (`gt2`) vs pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
+**Question A3:** Try to compute the probabilities of the four rooted gene trees by hand (using PhyloNet to check your work). How does the calculation for the balanced (or symmetric) topology (`gt2`) differ from the pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
 
 *Tip: Read [Degnan and Rosenberg (2006)](https://doi.org/10.1371/journal.pgen.0020068).*
 
