@@ -4,7 +4,7 @@ Coalescent Lab - Day 2
 In this lab, we will analyze data from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) and examine the relationship between clades A, B1, B2, C, and outgroups: chicken (`galGal`) and ostrich (`strCam`).
 
 <p align="center">
-<img src="clades_low.jpeg" alt="clades" width="100%" height="auto"/>
+<img src="clades_low.jpg" alt="clades" width="100%" height="auto"/>
 </p>
 
 
