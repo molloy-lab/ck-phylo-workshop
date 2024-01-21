@@ -5,21 +5,18 @@ The goal of this lab is to learn (or reinforce) some of the core principles behi
 
 During this lab, we will
 
+* compute the probability of a (gene tree) topology given an MSC model species tree
 * run quartet-based coalescent methods, including gene tree summary methods and site-based methods
-* fit branch lengths (in CUs) to a fixed species tree topology
 * use quartet concordance factors (qCFs) to evaluate the pseudo-likelihood of a species tree (+ visualize goodness of fit)
-* test if a species tree is in the anomaly zone
 
-and interpret the results of these analyses.
-
-We will utilize real and synthetic data for *Palaeognathae* (flightless birds), considering the effects of incomplete lineage sorting (ILS), gene tree estimation error (GTEE), and data type.
+and interpret the results of these analyses. We will utilize real and synthetic data for *Palaeognathae* (flightless birds), considering the effects of incomplete lineage sorting (ILS), gene tree estimation error (GTEE), and data type.
 
 <p align="center">
 <img src="model-species-tree-v1-annotated_low.jpg" alt="palaeognathae" width="100%" height="auto"/>
 </p>
 
 This study system was selected because concatenation (RaxML and ExaML) and coalescent methods (ASTRAL and MP-EST) have yielded different results with respect to the placement of Rheas.
-Additionally, the data for *Palaeognathae* are publicly available (and very organized), cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions), and are small enough to analyze with a variety of methods (note that there are only 15 taxa so just 1365 subsets of 4 taxa need to be considered for methods that explicitly enumerate all quartets).
+Additionally, the data for *Palaeognathae* are publicly available well-curated, cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions), and are small enough to analyze with a variety of methods (note that there are only 15 taxa so just 1365 subsets of 4 taxa need to be considered for methods that explicitly enumerate all quartets).
 
 * Go to the [Day 1](day1/README.md).
 * Go to the [Day 2](day2/README.md).
