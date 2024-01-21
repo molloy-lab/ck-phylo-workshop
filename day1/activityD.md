@@ -1,7 +1,8 @@
 Activity D (Optional): Evaluate pseudolikelihood and check goodness of fit
 ===
 
-Lastly, let's evaluate the estimated tree by computing pseudolikelihood with [PhyloNetworks](https://crsl4.github.io/PhyloNetworks.jl/latest/). The pseudolikelihoodfunction computes the expected quartet concordance factors (qCFs) under the model species tree as well as the observed qCFs in the input gene trees. Thus, we can also check goodness of fit.
+Lastly, let's evaluate the estimated tree by computing pseudolikelihood with [PhyloNetworks](https://crsl4.github.io/PhyloNetworks.jl/latest/). 
+The pseudolikelihood function computes the expected quartet concordance factors (CFs) under the model species tree as well as the observed quartet CFs in the input gene trees; thus, goodness of fit can also be evaluated.
 
 0. Remove the quartet support from the TREE-QMC tree e.g.
 ```
@@ -28,7 +29,7 @@ qf_file = "treeqmc_qCF.csv"
 qf_plot = "treeqmc_qCF.png"
 ```
 
-3. Compute the qCFs from the input gene trees and store to `tb_file`.
+3. Compute the observed quartet CF, i.e., the number of times each quartet appears in the input gene trees and divide by the total number of gene trees. Store the results for all quartets to `tb_file`.
 ```
 gtrees = readMultiTopology(gt_file);
 q,t = countquartetsintrees(gtrees);
@@ -36,13 +37,15 @@ df = writeTableCF(q,t);
 CSV.write(qf_file, df);
 ```
 
-**Question D1:** How do the observed quartet CFs compare to the expected values from Questions B1-B4. To access these frequencies in the file, try `grep`.
+**Question D1:** How do the observed quartet frequencies from step 3 compare to the expected values from Questions B1-B4. 
+
+*Tip: Use `grep` to access these frequencies in the file. For B1, this could look like the command below.*
+
 ```
 head -n1 treeqmc_qCF.csv
 grep "galGal" treeqmc_qCF.csv | grep "cryCin" | grep "rhePen" | grep "aptRow"
 ```
-
-*Tip: Run this command in separate terminal or type `exit();`. You can then grep the file. Afterward re-start Julia, and pick back up from step 4 (after loading packages and file names).*
+*Another Tip: Run this command in separate terminal. Otherwise, type `exit();`, grep the file, and then re-start Julia. Now you can continue with step 4 below, after loading packages and file names.*
 
 4. Load the estimated species tree topology.
 ```
@@ -50,7 +53,7 @@ gtCF = readTableCF(qf_file);
 stree = readTopology(st_file)
 ```
 
-5. Calculate pseudolikelihood, which will in turn calculate expected qCFs.
+5. Calculate pseudolikelihood, which will in turn calculate expected quartet CFs under the MSC, i.e., the probability of the quartet given the MSC model species tree.
 ```
 loglik = topologyQPseudolik!(stree, gtCF);
 loglik
@@ -63,7 +66,7 @@ loglik
 df_long = fittedQuartetCF(gtCF, :long);
 ```
 
-7. Plot the observed vs expected qCFs.
+7. Plot the observed vs expected quartet CFs.
 ```
 ggplot(df_long, aes(x=:obsCF, y=:expCF)) +
        theme_classic() + 
@@ -80,7 +83,7 @@ ggsave(qf_plot, scale=1, width=6, height=5);
 exit();
 ```
 
-**Question D3:** Does the estimated species tree fit seem like a good fit for the data (looking at the png file)?
+**Question D3:** Does the estimated species tree fit seem like a good fit for the data when looking at the png file?
 
 *Tip: If you only have a species tree topology (no branch lengths), you can fit branch lengths to it by replacing step 5 with the command:*
 ```
@@ -89,7 +92,7 @@ stfitted.loglik
 ```
 *and then continue with the analysis.*
 
-**Optional:** Repeat the tasks above varying the number of gene trees (e.g., 50 and 100) and compare these results to those for 10K gene trees.
+**Optional:** Repeat the tasks above taking a species tree estimated on the reduced set of 100 gene trees. Compare the results.
 
 Credits
 ---
@@ -98,5 +101,3 @@ Credits
 ---
 
 Go back to the [landing page for day 1](README.md).
-
-
