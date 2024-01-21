@@ -55,7 +55,7 @@ CalGTProb st (gt3);
 CalGTProb st (gt4);
 END;
 ```
-3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, `gt4`, and `gt5` by combining the newick strings above
+3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, and `gt4` by combining the newick strings above
 4. Add the newick string for the model species tree
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar phylonet.nex`
 6. Convert the log-likelihood of each gene tree into a probability via $e^{loglik}$.
