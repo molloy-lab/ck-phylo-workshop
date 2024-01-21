@@ -58,7 +58,7 @@ END;
 3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, and `gt4` by combining the newick strings above
 4. Add the newick string for the model species tree
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
-6. Convert the log-likelihood of each gene tree into a probability via $e^{loglik}$.
+6. Convert the log-likelihood of each gene tree into a probability via $e^{loglk}$.
 
 **Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
 
