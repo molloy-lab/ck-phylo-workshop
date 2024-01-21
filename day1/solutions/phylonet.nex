@@ -4,6 +4,7 @@ BEGIN TREES;
 tree gt1 = (((((rhePen,rheAme),((droNov,casCas),(aptRow,(aptOwe,aptHaa)))),(((notPer,eudEle),(tinGut,cryCin)),anoDid)),strCam),galGal);
 tree gt2 = (((((rhePen,rheAme),(((notPer,eudEle),(tinGut,cryCin)),anoDid)),((droNov,casCas),(aptRow,(aptOwe,aptHaa)))),strCam),galGal);
 tree gt3 = ((((((droNov,casCas),(aptRow,(aptOwe,aptHaa))),(((notPer,eudEle),(tinGut,cryCin)),anoDid)),(rhePen,rheAme)),strCam),galGal);
+tree gt4 = ((((((droNov,casCas),(((notPer,eudEle),(tinGut,cryCin)),anoDid)),(aptRow,(aptOwe,aptHaa))),(rhePen,rheAme)),strCam),galGal);
 END;
 
 BEGIN NETWORKS;
@@ -11,7 +12,8 @@ Network st = ((((anoDid,((cryCin,tinGut):2.222865,(eudEle,notPer):0.569523):3.97
 END;
 
 BEGIN PHYLONET;
-CalGTProb st (gt1);  
+CalGTProb st (gt1);
 CalGTProb st (gt2);
 CalGTProb st (gt3);
+CalGTProb st (gt4);
 END;

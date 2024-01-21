@@ -1,0 +1,15 @@
+NOTE: species tree contains A,B|C,D and q1 = freq(A,B|C,D)
+A;B;C;D;q1;q2;q3;EN;BRLN
+"rhePen,casCas,aptMan,droNov,aptHaa,rheAme,eudEle,aptRow,anoDid,notPer,cryCin,aptOwe,tinGut,";"strCam,";"";"galGal,";0;0;0;0
+"aptMan,droNov,casCas,aptHaa,aptRow,anoDid,notPer,cryCin,eudEle,aptOwe,tinGut,";"rhePen,rheAme,";"strCam,";"galGal,";0.803179;0.0691694;0.127651;1.219997
+"anoDid,notPer,eudEle,tinGut,cryCin,";"droNov,aptHaa,casCas,aptRow,aptOwe,aptMan,";"rhePen,rheAme,";"strCam,galGal,";0.360237;0.295783;0.34398;0.041192
+"notPer,eudEle,tinGut,cryCin,";"anoDid,";"droNov,aptHaa,casCas,aptRow,aptOwe,aptMan,";"rhePen,strCam,rheAme,galGal,";0.990341;0.00223007;0.00742848;4.234447
+"tinGut,cryCin,";"notPer,eudEle,";"anoDid,";"rhePen,droNov,aptMan,casCas,strCam,aptHaa,rheAme,aptRow,galGal,aptOwe,";0.999112;0.000367111;0.000521304;6.620606
+"cryCin,";"tinGut,";"notPer,eudEle,";"rhePen,droNov,aptMan,casCas,strCam,aptHaa,rheAme,aptRow,galGal,anoDid,aptOwe,";0.990281;0.00454279;0.00517639;4.228189
+"eudEle,";"notPer,";"tinGut,cryCin,";"rhePen,droNov,aptMan,casCas,strCam,aptHaa,rheAme,aptRow,galGal,anoDid,aptOwe,";0.687822;0.1613;0.150878;0.758717
+"aptRow,aptOwe,aptMan,aptHaa,";"droNov,casCas,";"anoDid,notPer,eudEle,tinGut,cryCin,";"rhePen,strCam,rheAme,galGal,";0.401335;0.295804;0.302862;0.107588
+"aptOwe,aptHaa,";"aptMan,aptRow,";"droNov,casCas,";"rhePen,strCam,rheAme,eudEle,galGal,anoDid,notPer,cryCin,tinGut,";0.999632;0.000267292;0.000100368;7.502886
+"aptHaa,";"aptOwe,";"aptMan,aptRow,";"rhePen,droNov,casCas,strCam,rheAme,eudEle,galGal,anoDid,notPer,cryCin,tinGut,";0.970538;0.0142206;0.0152417;3.119177
+"aptRow,";"aptMan,";"aptOwe,aptHaa,";"rhePen,droNov,casCas,strCam,rheAme,eudEle,galGal,anoDid,notPer,cryCin,tinGut,";0.939504;0.0299932;0.030503;2.399709
+"casCas,";"droNov,";"aptRow,aptOwe,aptMan,aptHaa,";"rhePen,strCam,rheAme,eudEle,galGal,anoDid,notPer,cryCin,tinGut,";0.999408;0.000142665;0.000449323;7.026560
+"rheAme,";"rhePen,";"aptMan,droNov,casCas,aptHaa,aptRow,anoDid,notPer,cryCin,eudEle,aptOwe,tinGut,";"strCam,galGal,";0.999798;0.000195278;7.22112e-06;8.099312

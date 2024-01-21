@@ -13,20 +13,22 @@ Let's consider the focal branch for the placement of Rhea (group **A**), which h
 
 The quartets *around* this focal branch have topology **a,b|c,d** where **a** is a taxon from group **A** (Rheas), **b** is from group **B** (Emu+Cassowary+Kiwis), **c** is from group **C** (Tinamous+Moa), and **d** is from the outgroup **D** (Ostrich/Chicken). 
 
-Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch; this gives the 3 topologies below, all rooted at the outgroup `galGal`.
+Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch; this gives the 3 topologies below, all rooted at the outgroup `galGal` (in addition to topology created by taking `gt3` and slitting clade B into B1 and B2).
 
 ```
-gt1 = ((((cladeA,cladeB),cladeC),strCam),galGal);
-gt2 = ((((cladeA,cladeC),cladeB),strCam),galGal);
-gt3 = ((((cladeB,cladeC),cladeA),strCam),galGal);
+gt1 = ((((A,(B1,B2)),C),strCam),galGal);
+gt2 = ((((A,C),(B1,B2)),strCam),galGal);
+gt3 = (((((B1,B2),C),A),strCam),galGal);
+gt4 = (((((B1,C),B2),A),strCam),galGal);
 ```
 
 where
 
 ```
-cladeA = (rhePen,rheAme)
-cladeB = ((droNov,casCas),(aptRow,(aptOwe,aptHaa)))
-cladeC = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
+A = (rhePen,rheAme)
+B1 = (droNov,casCas)
+B2 = (aptRow,(aptOwe,aptHaa))
+C = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
 ```
 
 To compute the probability of these topologies under the MSC model species tree, try the following.
@@ -39,6 +41,7 @@ BEGIN TREES;
 tree gt1 = <add newick string here>
 tree gt2 = <add newick string here>
 tree gt3 = <add newick string here>
+tree gt4 = <add newick string here>
 END;
 
 BEGIN NETWORKS;
@@ -49,19 +52,21 @@ BEGIN PHYLONET;
 CalGTProb st (gt1);  
 CalGTProb st (gt2);
 CalGTProb st (gt3);
+CalGTProb st (gt4);
 END;
 ```
-3. Fill in the newick strings for  `gt1`, `gt2`, and `gt3` by combining the newick strings above
+3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, `gt4`, and `gt5` by combining the newick strings above
 4. Add the newick string for the model species tree
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar phylonet.nex`
 6. Convert the log-likelihood of each gene tree into a probability via $e^{loglik}$.
 
-**Question A2:** Which of `gt1`, `gt2`, or `gt3` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
+**Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
 
-Beyond this activity
+Beyond this lab
 ---
 
-Consider restricting the above analysis to four taxa: `notPer,aptRow,droNov,rhePen` but computing the probabilities by hand.
+Consider restricting the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C) so that you can compute the probabilities of the three rooted gene trees by hand.
+
 
 ```
 st = (((rhePen,(aptRow,droNov):0.553644):0.008906),notPer);
@@ -69,9 +74,10 @@ st = (((rhePen,(aptRow,droNov):0.553644):0.008906),notPer);
 gt1 = ((rhePen,(aptRow,droNov)),notPer);
 gt2 = ((rhePen,notPer),(aptRow,droNov));
 gt3 = (((aptRow,droNov),notPer),rhePen);
+gt4 = (((droNov,notPer),aptRow),rhePen);
 ```
 
-**Question A3:** How does this calculation differ for the balanced (or symmetric) toplogy (`gt2`) vs pectinate (or assymetric) topologies (`gt1` and `gt3`)?
+**Question A3:** How does this calculation differ for the balanced (or symmetric) toplogy (`gt2`) vs pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
 
 *Tip: Read [Degnan and Rosenberg (2006)](https://doi.org/10.1371/journal.pgen.0020068).*
 

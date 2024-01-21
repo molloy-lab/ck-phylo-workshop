@@ -19,7 +19,7 @@ We will utilize real and synthetic data for *Palaeognathae* (flightless birds), 
 </p>
 
 This study system was selected because concatenation (RaxML and ExaML) and coalescent methods (ASTRAL and MP-EST) have yielded different results with respect to the placement of Rheas.
-Additionally, the data for *Palaeognathae* cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions) and are small enough to analyze with a variety of methods (note that there are only 15 taxa so just 1365 subsets of 4 taxa need to be considered for methods that explicitly enumerate all quartets).
+Additionally, the data for *Palaeognathae* are publicly available (and very organized), cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions), and are small enough to analyze with a variety of methods (note that there are only 15 taxa so just 1365 subsets of 4 taxa need to be considered for methods that explicitly enumerate all quartets).
 
 * Go to the [Day 1](day1/README.md).
 * Go to the [Day 2](day2/README.md).

@@ -1,0 +1,15 @@
+NOTE: species tree contains A,B|C,D and q1 = freq(A,B|C,D)
+A;B;C;D;q1;q2;q3;EN;BRLN
+"rhePen,rheAme,aptHaa,droNov,casCas,anoDid,aptMan,aptRow,aptOwe,cryCin,notPer,tinGut,eudEle,";"strCam,";"";"galGal,";0;0;0;0;0
+"notPer,tinGut,anoDid,eudEle,cryCin,";"rheAme,aptMan,droNov,casCas,aptRow,rhePen,aptOwe,aptHaa,";"strCam,";"galGal,";0.702115;0.0827822;0.215102;5016;0.805584
+"notPer,tinGut,eudEle,cryCin,";"anoDid,";"rheAme,aptMan,droNov,casCas,aptRow,rhePen,aptOwe,aptHaa,";"strCam,galGal,";0.967693;0.00561844;0.0266889;4982;3.026995
+"tinGut,cryCin,";"notPer,eudEle,";"anoDid,";"strCam,rhePen,rheAme,casCas,galGal,aptMan,aptRow,aptOwe,droNov,aptHaa,";0.997984;0.000948972;0.00106662;4982;5.801378
+"cryCin,";"tinGut,";"notPer,eudEle,";"strCam,rhePen,rheAme,casCas,anoDid,galGal,aptMan,aptRow,aptOwe,droNov,aptHaa,";0.975858;0.01135;0.0127918;5016;3.318344
+"eudEle,";"notPer,";"tinGut,cryCin,";"strCam,rhePen,rheAme,casCas,anoDid,galGal,aptMan,aptRow,aptOwe,droNov,aptHaa,";0.594919;0.204409;0.200672;5016;0.498203
+"aptMan,droNov,casCas,aptRow,aptOwe,aptHaa,";"rhePen,rheAme,";"notPer,tinGut,anoDid,eudEle,cryCin,";"strCam,galGal,";0.350626;0.349583;0.299791;5016;0.026281
+"aptMan,aptRow,aptOwe,aptHaa,";"droNov,casCas,";"rhePen,rheAme,";"strCam,anoDid,galGal,cryCin,notPer,eudEle,tinGut,";0.381788;0.312761;0.305451;5016;0.075458
+"aptOwe,aptHaa,";"aptMan,aptRow,";"droNov,casCas,";"strCam,rhePen,rheAme,anoDid,galGal,cryCin,notPer,eudEle,tinGut,";0.999172;0.000573166;0.00025474;5016;6.691146
+"aptHaa,";"aptOwe,";"aptMan,aptRow,";"strCam,rhePen,rheAme,casCas,anoDid,galGal,droNov,cryCin,notPer,eudEle,tinGut,";0.948546;0.026352;0.0251015;5016;2.561611
+"aptRow,";"aptMan,";"aptOwe,aptHaa,";"strCam,rhePen,rheAme,casCas,anoDid,galGal,droNov,cryCin,notPer,eudEle,tinGut,";0.89228;0.0541548;0.0535653;2560;1.822753
+"casCas,";"droNov,";"aptMan,aptRow,aptOwe,aptHaa,";"strCam,rhePen,rheAme,anoDid,galGal,cryCin,notPer,eudEle,tinGut,";0.998715;0.000575935;0.000708843;5016;6.251705
+"rheAme,";"rhePen,";"aptMan,droNov,casCas,aptRow,aptOwe,aptHaa,";"strCam,anoDid,galGal,cryCin,notPer,eudEle,tinGut,";0.999801;0.000142401;5.69606e-05;5016;8.114923

@@ -42,7 +42,11 @@ CalGTProb st (gt3)
 Species Network:
 (galGal,(strCam,(((rhePen,rheAme):6.124807,((droNov,casCas):6.316124,(aptRow,(aptOwe,aptHaa):2.763538):6.334034):0.553644):0.008906,(((notPer,eudEle):0.569523,(tinGut,cryCin):2.222865):3.974074,anoDid):2.892946):0.640913):0.086324);
 Total log probability: -4.328859170143791
+
+CalGTProb st (gt4)
+Species Network:
+(galGal,(strCam,(((rhePen,rheAme):6.124807,((droNov,casCas):6.316124,(aptRow,(aptOwe,aptHaa):2.763538):6.334034):0.553644):0.008906,(((notPer,eudEle):0.569523,(tinGut,cryCin):2.222865):3.974074,anoDid):2.892946):0.640913):0.086324);
+Total log probability: -6.26311484612506
 ```
 
-**Question A2:** The probabilities of `gt1`, `gt2`, and `gt3` are 0.0137, 0.0151, and 0.0132, respectively. `gt2` has higher probability than `gt1` so the species tree is in the anomaly zone.
-
+**Question A2:** The probabilities of `gt1`, `gt2`, `gt3`, and `gt4` are 0.0137, 0.0151, 0.0132, and 0.0019, respectively. `gt2` has higher probability than `gt1` (which agrees with the species tree) so the species tree is in the anomaly zone.

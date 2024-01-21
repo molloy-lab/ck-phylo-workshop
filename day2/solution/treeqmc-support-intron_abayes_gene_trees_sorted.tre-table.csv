@@ -1,0 +1,15 @@
+NOTE: species tree contains A,B|C,D and q1 = freq(A,B|C,D)
+A;B;C;D;q1;q2;q3;EN;BRLN
+"rhePen,aptRow,aptOwe,notPer,aptMan,aptHaa,anoDid,eudEle,casCas,rheAme,tinGut,droNov,cryCin,";"strCam,";"";"galGal,";0;0;0;0
+"notPer,eudEle,tinGut,anoDid,cryCin,";"rhePen,rheAme,droNov,aptHaa,aptMan,aptRow,aptOwe,casCas,";"strCam,";"galGal,";0.745953;0.0542917;0.199755;0.964771
+"notPer,eudEle,tinGut,cryCin,";"anoDid,";"rhePen,rheAme,droNov,aptHaa,aptMan,aptRow,aptOwe,casCas,";"strCam,galGal,";0.975428;0.00325458;0.0213179;3.300664
+"tinGut,cryCin,";"notPer,eudEle,";"anoDid,";"strCam,rhePen,droNov,aptRow,aptOwe,galGal,aptMan,aptHaa,casCas,rheAme,";0.998413;0.00068746;0.000899246;6.040630
+"cryCin,";"tinGut,";"notPer,eudEle,";"strCam,rhePen,droNov,aptRow,aptOwe,galGal,aptMan,aptHaa,anoDid,casCas,rheAme,";0.988355;0.00544975;0.00619481;4.047451
+"eudEle,";"notPer,";"tinGut,cryCin,";"strCam,rhePen,droNov,aptRow,aptOwe,galGal,aptMan,aptHaa,anoDid,casCas,rheAme,";0.679908;0.164601;0.155492;0.733680
+"droNov,aptHaa,aptMan,aptRow,aptOwe,casCas,";"rhePen,rheAme,";"notPer,eudEle,tinGut,anoDid,cryCin,";"strCam,galGal,";0.361612;0.351031;0.287357;0.043343
+"aptMan,aptRow,aptOwe,aptHaa,";"droNov,casCas,";"rhePen,rheAme,";"strCam,notPer,cryCin,galGal,anoDid,eudEle,tinGut,";0.396545;0.303779;0.299676;0.099619
+"aptOwe,aptHaa,";"aptMan,aptRow,";"droNov,casCas,";"strCam,rhePen,notPer,cryCin,galGal,anoDid,eudEle,rheAme,tinGut,";0.999457;0.000385202;0.000157601;7.113298
+"aptHaa,";"aptOwe,";"aptMan,aptRow,";"strCam,rhePen,droNov,notPer,cryCin,galGal,anoDid,eudEle,casCas,rheAme,tinGut,";0.969858;0.0144844;0.0156575;3.096376
+"aptRow,";"aptMan,";"aptOwe,aptHaa,";"strCam,rhePen,droNov,notPer,cryCin,galGal,anoDid,eudEle,casCas,rheAme,tinGut,";0.937708;0.0307894;0.0315031;2.370449
+"casCas,";"droNov,";"aptMan,aptRow,aptOwe,aptHaa,";"strCam,rhePen,notPer,cryCin,galGal,anoDid,eudEle,rheAme,tinGut,";0.999269;0.000218344;0.00051275;6.815503
+"rheAme,";"rhePen,";"droNov,aptHaa,aptMan,aptRow,aptOwe,casCas,";"strCam,notPer,cryCin,galGal,anoDid,eudEle,tinGut,";0.999907;8.74895e-05;5.03135e-06;8.882611
