@@ -15,7 +15,7 @@ and interpret the results of these analyses.
 We will utilize real and synthetic data for *Palaeognathae* (flightless birds), considering the effects of incomplete lineage sorting (ILS), gene tree estimation error (GTEE), and data type.
 
 <p align="center">
-<img src="model-species-tree-v1-annotated-low.jpg" alt="palaeognathae" width="100%" height="auto"/>
+<img src="model-species-tree-v1-annotated_low.jpg" alt="palaeognathae" width="100%" height="auto"/>
 </p>
 
 This study system was selected because concatenation (RaxML and ExaML) and coalescent methods (ASTRAL and MP-EST) have yielded different results with respect to the placement of Rheas.
