@@ -1,7 +1,7 @@
 Coalescent Lab - Day 2
 ===
 
-In this lab, we will analyze data from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) and examine the relationship between clades A, B1, B2, C, and outgroups: chicken (`galGal`) and ostrich (`strCam`).
+In this lab, we will estimate species trees on data sets from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) using coalescent quartet-based methods. We will then compare and contrast the relationship between clades A, B1, B2, and C across the different methods and data types.
 
 <p align="center">
 <img src="clades_low.jpg" alt="clades" width="100%" height="auto"/>
@@ -55,7 +55,7 @@ Group 1
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
+*  Recall from day 1 that TREE-QMC and ASTRAL are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC, in particular, weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
 * Note that ASTRAL gave the same result as TREE-QMC in our analyses.
 
 
@@ -63,25 +63,22 @@ Group 2
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
-* The **support quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model". It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID; see [Liu & Warnow, 2023](https://doi.org/10.1186/s13015-023-00230-6).
-* Note that support only weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* The **support quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model". It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
+* Note that support weighting does not automatically build with ASTRAL/ASTER so we did not run it.
 
 
 Group 3
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **length weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
-* The **length quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC. It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID; see [Liu & Warnow, 2023](https://doi.org/10.1186/s13015-023-00230-6).
-* Note that length only weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* The **length quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC. It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID [[Liu & Warnow, 2023]]](https://doi.org/10.1186/s13015-023-00230-6).
+* Note that length weighting does not automatically build with ASTRAL/ASTER so we did not run it.
 
 
 Group 4
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
-*  TREE-QMC, like ASTRAL, is a heuristic for the maximum quartet species tree problem (the optimal solution to this problem is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122), which doesn't apply here.
 * The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE); it has since been implemented in TREE-QMC.
 * Note that ASTRAL-hybrid gave the same result as TREE-QMC-hybrid in our analyses.
 
@@ -89,11 +86,10 @@ Group 5
 ---
 Run the coalescent site-based method **SVDQuartets** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
-* SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
-* Check out this [tutorial](https://www.asc.ohio-state.edu/kubatko.2//phylogenomics2019/SpeciesTreeTutorial.html).
 * SVDquartets estimated a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039).
 * To learn about the SVDquartets method, see [Chifman & Kubatko (2014)](https://doi.org/10.1093/bioinformatics/btu530) and [Chifman & Kubatko (2015)](https://doi.org/10.1016/j.jtbi.2015.03.006).
-
+*  SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
+* Check out this [tutorial](https://www.asc.ohio-state.edu/kubatko.2//phylogenomics2019/SpeciesTreeTutorial.html).
 
 Group 6
 ---
