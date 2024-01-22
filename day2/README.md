@@ -66,7 +66,7 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weight
 
 Notes:
 * TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
-* **Quartet weighting based on branch support** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model".
+* **Quartet weighting based on branch support** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model".
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction; a related weighting scheme has also been implemented in the distance-based summary method ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
 * The support weighting scheme did not automatically build with ASTRAL/ASTER so we did not run it.
 
@@ -77,7 +77,7 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **length weighti
 
 Notes:
 * TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
-* **Quartet weighting based on branch length** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC.
+* **Quartet weighting based on branch length** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC.
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction; a related weighting scheme has also been implemented in the distance-based summary method ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
 * Length weighting did not automatically build with ASTRAL/ASTER so we did not run it.
 
@@ -88,7 +88,7 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighti
 
 Notes: 
 * TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
-* The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE).
+* The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE).
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction.
 * In these labs, both TREE-QMC-hybrid and ASTRAL-hybrid return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness).
 
