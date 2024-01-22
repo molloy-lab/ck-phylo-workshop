@@ -16,7 +16,7 @@ and interpret the results of these analyses. We will utilize real and synthetic 
 </p>
 
 This study system was selected because concatenation (RaxML and ExaML) and coalescent methods (ASTRAL and MP-EST) have yielded different results with respect to the placement of Rheas [[Cloutier *et al.* (2019)]](https://doi.org/10.1093/sysbio/syz019).
-Additionally, the data for *Palaeognathae* are publicly available well-curated, cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions), and are small enough to analyze with a variety of methods (note that there are only 15 taxa so just 1365 subsets of 4 taxa need to be considered for methods that explicitly enumerate all quartets).
+Additionally, the data for *Palaeognathae* are publicly available well-curated, cover several different marker types (ranging from UCEs to CR1 retrotransposon insertions), and are small enough to analyze with a variety of methods (there are 15 taxa so just 1365 subsets of 4 taxa need to be evaluated by methods that explicitly enumerate all quartets).
 
 * Go to the [Day 1](day1/README.md).
 * Go to the [Day 2](day2/README.md).
