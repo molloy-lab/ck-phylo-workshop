@@ -77,8 +77,8 @@ To visualize the tree topology, do the following.
 **Question C1:** Does ASTRAL recover the same topology as the model species tree? What about TREE-QMC?
 
 To see the branch support information, do the following.
-2. Click on the blue `Style` button
-3. Select `Internal node text` from the dropdown menu and then select `Label`
+1. Click on the blue `Style` button
+2. Select `Internal node text` from the dropdown menu and then select `Label`
 
 There should be four values, labeled `q1`,`q2`,`q3`, and `EN`, displayed for each internal node in the tree.
 * `q1` is the fraction of quartets in the gene trees that agree with the branch in the specie stree
