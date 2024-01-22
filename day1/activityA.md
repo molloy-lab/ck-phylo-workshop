@@ -1,6 +1,8 @@
 Activity A: Check if the model species tree is in the anomaly zone
 ===
 
+If you estimate a species tree, a basic question to address is whether it is in the anomaly zone, motivating the use of coalescent methods.
+
 **Question A1:** Looking at the model species tree below, would guess that it is in the anomaly zone? Why or why not?
 
 <p align="center">
