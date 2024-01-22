@@ -66,29 +66,31 @@ cat treeqmc.tre | \
 cat treeqmc_for_viz.tre
 ```
 
-Then, do the following.
+To visualize the tree topology, do the following.
 
 1. Go to [https://icytree.org](https://icytree.org)
 2. Click on the blue `File` button
 3. Select `Enter tree directly...` from the dropdown menu
 4. Copy the text for the newick string into the box
 5. Click done
+
+**Question C1:** Does ASTRAL recover the same topology as the model species tree? What about TREE-QMC?
+
+To see the branch support information, do the following.
 2. Click on the blue `Style` button
 3. Select `Internal node text` from the dropdown menu and then select `Label`
 
-Now four values, labeled `q1`,`q2`,`q3`, and `EN`, should be displayed for each internal node in the tree.
+There should be four values, labeled `q1`,`q2`,`q3`, and `EN`, displayed for each internal node in the tree.
 * `q1` is the fraction of quartets in the gene trees that agree with the branch in the specie stree
 * `q2` and `q3` are the same as `q1` but for the two alternative quartet topologies
 * `EN` is the effective number of genes for the branch (note that if there are no polytomies and no missing data, then this value should always equal the number of gene trees in the input)
 
-The algorithm for computing these values is introduced in [Sayyari and Mirarab (2016)](https://doi.org/10.1093%2Fmolbev%2Fmsw079); this paper also details ASTRAL's branch support metric, called local posterior probability.
-To learn more, see the [ASTRAL documentation](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#branch-length-and-support) or see [this example](quartet_support_example.md) on how these values are impacted by missing data and polytomies.
-
-**Question C1:** Do ASTRAL and TREE-QMC recover the same topology as the model species tree?
-
 **Question C2:** Do the quartet support values from TREE-QMC agree with your calculations from activity B?
 
 *Tip: Use the blue `Search` to highlight taxa in the tree.*
+
+The algorithm for computing these values is introduced in [Sayyari and Mirarab (2016)](https://doi.org/10.1093%2Fmolbev%2Fmsw079); they also introduce ASTRAL's branch support metric, called local posterior probability.
+To learn more, see the [ASTRAL documentation](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#branch-length-and-support) or see [this example](quartet_support_example.md) on how these values are impacted by missing data and polytomies.
 
 **Optional:** Repeat the tasks above but reduce the number of gene trees from 10,000 down to 100. Compare the results.
 
