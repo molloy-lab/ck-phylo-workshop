@@ -100,6 +100,7 @@ Group 5
 ---
 Run the coalescent site-based method **SVDQuartets** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
+Notes:
 * SVDquartets estimates a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039) and conveniently bypasses gene tree estimation -- and thus problems with gene tree estimation error. However, there can still be errors (from ortholog identification and alignment) as well as model violations (e.g., selection or heterotachy).
 * To learn about the SVDquartets method, see [Chifman & Kubatko (2014)](https://doi.org/10.1093/bioinformatics/btu530) and [Chifman & Kubatko (2015)](https://doi.org/10.1016/j.jtbi.2015.03.006).
 * SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
@@ -109,6 +110,7 @@ Group 6
 ---
 Run the new coalescent site-based methods **CASTER-site** and **CASTER-pair** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
+Notes:
 * CASTER is implemented as part of [ASTRAL/ASTER](https://github.com/chaoszhang/ASTER/).
 * To learn more about the CASTER, check out this very recent and exciting preprint: [Zhang *et al.* (2023)](https://doi.org/10.1101/2023.10.04.560884).
 
@@ -117,10 +119,11 @@ Group 7
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) to reconstruct a species tree from the CR1 presence / absence patterns via quartets
 
+Notes:
 * To learn more about this approach, see [Springer *et al.* (2020)](https://doi.org/10.1093/jhered/esz076) and [Molloy *et al.* (2021)](https://doi.org/10.1093/sysbio/syab086).
-* The main benefit is that the presence/absence of low-homoplasy insertions across genomes may be more robust to error than estimated gene trees. Moreover, such insertions may be less likely to be observed in regions of the genome under selection, thus fitting the neutrality assumption of the MSC.
-* However, each CR1 presence/absence character is like a tree with only one branch, separating species with the insertion from those without it. Thus, a single character may not contain any quartets that inform how to resolve a particular branch in the species tree.
-* Thus, when interpreting the results, it's important to look at effective number (`EN`) of markers with information to resolve each branch in the estimated species tree; for more details, see this [example](../day1/quartet_support_example.md).
+* The main benefit is that the presence/absence of low-homoplasy insertions across genomes may be more robust to error than estimated gene trees. Moreover, such insertions may be less likely to be observed in regions of the genome under selection, thus fitting the neutrality assumption of the MSC. However, they can still undergo ILS; thus the utility of quartets.
+* On the other hand, each CR1 presence/absence character is like a tree with just one branch, separating species with the insertion (derived state) from those without it (ancestral state). Thus, a single character may not contain *any* quartets that inform how to resolve a particular branch in the species tree.
+* Thus, when interpreting the results, it's important to confirm the effective number (`EN`) of markers with information to resolve each branch in the estimated species tree is sufficiently high.
 
 
 Alternative activities if you have free time and don't want to try out other methods
