@@ -1,7 +1,7 @@
 Activity B: Calculate expected quartet frequencies by hand
 ===
 
-Let's compute compute the expected frequencies of quartets in the gene trees for the MSC model species tree below. 
+Let's compute the expected frequencies of quartets in the gene trees for the MSC model species tree below. 
 
 <p align="center">
 <img src="images/model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
