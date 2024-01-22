@@ -25,7 +25,7 @@ The lastest version, called ASTER, uses a different algorithmic approach that is
 Recently, we introduced a yet another heuristic for MQSST, called TREE-QMC [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
 TREE-QMC implements new algorithms that enable the approach introduced by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to be performed directly on the input gene trees (rather than their extracted quartets); the outcome is scalability to large numbers of taxa without subsampling quartets. 
 Additionally, TREE-QMC weights quartets based on their relevance for solving a particular subproblem (branch in the species tree) and does so in such a way that the expected frequencies under MSC are not perturbed.
-In simulations, we have found these features make TREE-QMC at least as robust to missing data as ASTER (sometimes more robust) as well as more accurate for large trees.
+In simulations, we find these features make TREE-QMC at least as robust to missing data as ASTER (sometimes more robust) as well as more accurate for large trees.
 On the other hand, ASTER is faster when using multi-threading.
 However, for small data sets with very accurate gene trees, like those being used in today's lab, all summary methods should perform very well for both speed and accuracy.
 
