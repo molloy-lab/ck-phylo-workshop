@@ -78,7 +78,7 @@ Then, do the following.
 
 Now four values, labeled `q1`,`q2`,`q3`, and `EN`, should be displayed for each internal node in the tree.
 * `q1` is the fraction of quartets in the gene trees that agree with the branch in the specie stree
-* `q2` and `q3` are the same as `q1` but for the two alternative topologies
+* `q2` and `q3` are the same as `q1` but for the two alternative quartet topologies
 * `EN` is the effective number of genes for the branch (note that if there are no polytomies and no missing data, then this value should always equal the number of gene trees in the input)
 
 The algorithm for computing these values is introduced in [Sayyari and Mirarab (2016)](https://doi.org/10.1093%2Fmolbev%2Fmsw079); this paper also details ASTRAL's branch support metric, called local posterior probability.
