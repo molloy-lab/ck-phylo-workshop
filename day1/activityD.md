@@ -4,7 +4,7 @@ Activity D (Optional): Evaluate pseudolikelihood and check goodness of fit
 Lastly, let's evaluate the estimated tree by computing pseudolikelihood with [PhyloNetworks](https://crsl4.github.io/PhyloNetworks.jl/latest/). 
 The pseudolikelihood function computes the expected quartet concordance factors (CFs) from the model species tree as well as the observed quartet CFs from the input gene trees; thus, goodness of fit can also be evaluated.
 
-0. Remove the quartet support from the TREE-QMC tree e.g.
+0. Remove the branch support information from the TREE-QMC tree e.g. use the command:
 ```
 cat treeqmc.tre | sed "s/\'/\n/g" | sed '/^\[/d' | tr -d "\n" > treeqmc_noqs.tre
 ```
@@ -94,10 +94,12 @@ stfitted.loglik
 
 **Optional:** Repeat the tasks above taking the TREE-QMC tree estimated on 100 gene trees. Compare the results to those for 10,000 gene trees.
 
-Credits
----
-* [PhyloNetworks Manual](https://crsl4.github.io/PhyloNetworks.jl/latest/man/expectedCFs/)
-
 ---
 
 Go back to the [landing page for day 1](README.md).
+
+---
+
+Credits
+---
+* [PhyloNetworks Manual](https://crsl4.github.io/PhyloNetworks.jl/latest/man/expectedCFs/)
