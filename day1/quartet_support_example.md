@@ -89,6 +89,6 @@ To get the quartet support, divide these numbers by `EN`
 
 Since `q1` is the largest more gene trees support the branch in the species tree than the other 2 quartet resolutions.
 
-If you'd like, check these results by running TREE-QMC (with `--support` flag) or running ASTRAL.
+If you'd like, check these results by running [ASTRAL](https://github.com/chaoszhang/ASTER/) (with `-u2` flag) and [TREE-QMC](https://github.com/molloy-lab/TREE-QMC) (with `--support` flag).
 
 The take-away is that if the input gene trees have high missingness or are highly unresolved, then it's a good idea to look at the effective number of gene trees `EN` with information to resolve branches of interest in the species tree.
