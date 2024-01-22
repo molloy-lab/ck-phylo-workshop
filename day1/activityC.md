@@ -20,7 +20,7 @@ There are several benefits to quartet-based summary methods:
 3. Many fast and accurate heursitics have been developed
 
 ASTRAL has had several versions since it was introduced in 2014.
-The lastest version, called ASTER, uses a different algorithmic approach that is more robust to missing data the previous one [Zhang & Mirarab, 2022](https://doi.org/10.1093/molbev/msac215).
+The lastest version, called ASTER, uses a different algorithmic approach that is more robust to missing data the previous one [[Zhang & Mirarab, 2022]](https://doi.org/10.1093/molbev/msac215).
 Recently, we introduced a yet another heuristic for MQSST, called TREE-QMC [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
 TREE-QMC enables the divide-and-conquer algorithmic framework proposed by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to run directly on the input gene trees (rather than extracted quartets), enabling it scale to large data sets without subsampling quartets. 
 Additionally, TREE-QMC weights quartets based on their relevance to a current subproblem and does so in such a way that the expected frequencies under MSC are not perturbed.
@@ -44,7 +44,6 @@ To run [TREE-QMC](https://github.com/molloy-lab/TREE-QMC), use the command:
 ```
 treeqmc --root galGal \
         --support \
-        --writetable treeqmc_table.txt \
         -i simulated-gene-trees.tre \
         -o treeqmc.tre
 ```
@@ -56,41 +55,44 @@ cat treeqmc.tre
 
 These newick strings encode the tree topology as well as branch information: the length of each branch (in coalescent units) and quartet support *around* the branch. The quartet support is very useful for looking at the amount of conflict for a given branch.
 
-The trees encoded by these newick strings can be quickly visualized by going to [icytree](https://icytree.org), clicking the blue `File` button, selecting `Enter tree directly...`, and copying the newick string into the box.
+Let's shorten the information so that it is easier to visualize using the following command:
+```
+cat treeqmc.tre | \
+       sed 's/f1=/\nf=/g' | \
+       sed 's/q1=/\nq1=/g' | \
+       sed '/^f/d' | \
+       tr -d "\n" > treeqmc_for_viz.tre
+cat treeqmc_for_viz.tre
+```
+
+The trees with branch support information can be visualized with [icytree](https://icytree.org).
+
+1. Go to [https://icytree.org](https://icytree.org)
+2. Click on the blue `File` button
+3. Select `Enter tree directly...` from the dropdown menu
+4. Copying the text for the newick string into the box
+5. Click done
+2. Click on the blue `style` button, selecting `Enter tree directly...`
+3. Select `Internal node text` from the dropdown menu, then select `Label`
+
+Now four values, labeled `q1`,`q2`,`q3`, and `EN`, should be displayed for each internal node in the tree.
+* `q1` is the fraction of quartets in the gene trees that agree with the branch in the specie stree
+* `q2` and `q3` are the same as `q1` but for the two alternative topologies
+* `EN` is the effective number of genes for the branch (note that if there are no polytomies and no missing data, then this value should always equal the number of gene trees in the input)
+
+The algorithm for computing these values is introduced in [Sayyari and Mirarab (2016)](https://doi.org/10.1093%2Fmolbev%2Fmsw079); this paper also details ASTRAL's branch support metric, called local posterior probability.
+To learn more, see the [ASTRAL documentation](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#branch-length-and-support) or see [this example](quartet_support_example.md) on how these values are impacted by missing data and polytomies.
 
 **Question C1:** Do ASTRAL and TREE-QMC recover the same topology as the model species tree?
 
+**Question C2:** Do the quartet support values from TREE-QMC agree with your calculations from activity B?
+
+*Tip: Use the blue `Search` to highlight taxa in the tree.*
+
 **Optional:** Repeat the tasks above but reduce the number of gene trees from 10,000 down to 100. Compare the results.
 
-*Tip:* Use the Unix/Linux command `head` to create a new file with the first 100 gene trees from the original file. Then repeat the above commands for ASTRAL and TREE-QMC, replacing the input/output file names.
+*Tip: Use the Unix/Linux command `head` to create a new file with the first 100 gene trees from the original file. Then repeat the above commands for ASTRAL and TREE-QMC, replacing the input/output file names.*
 
 ---
 
 **Optional:** Go to **[Activity D](activityD.md)**.
-
----
-
-For later e.g. on the flight home :)
----
-
-As previously mentioned, the branch information in the newick strings of ASTRAL and TREE-QMC are useful for looking at the amount of conflict for a given branch.
-
-Consider a species tree with the following newick string:
-```
-(((rhePen,(aptRow,droNov)'[q1=0.62;q2=0.18;q3=0.20]':0.553644)'[q1=0;q2=0;q3=0]':0),notPer);
-```
-The branch connecting `(aptRow,droNov)` to the rest of the tree has length `0.553644` CUs and separates `aptRow,droNov` from `rhePen,notPer`.
-There is only one way of sampling four taxa *around* this branch so the quartet support information to the normalized frequency of each of the three possible quartets in the input gene trees.
-In other words, 62% of gene trees display the same quartet as the species tree, i.e., `aptRow,droNov|rhePen,notPer` and the remaining gene trees are essentially split for the other two quartets.
-
-If there is more than one way of sampling four taxa *around* a branch, the quartet support values are computed by essentially averaging across the different ways of selecting four taxa *around* the branch using the approach of [Sayyari and Mirarab (2016)](https://doi.org/10.1093%2Fmolbev%2Fmsw079); this paper also details ASTRAL's branch support metric, called local posterior probability.
-To learn more, see the [ASTRAL documentation](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#branch-length-and-support) or see [this example](quartet_support_example.md).
-
-The branch above `(rhePen,(aptRow,droNov))` has length `0` CUs and separates `aptRow,droNov,rhePen` from `notPer`. 
-This no way to sample four taxa *around* this branch so the quartet support values are all zero (and thus the branch length cannot be computed and is set to zero as well).
-
-Now let's look at the quartet support in `astral.tre` and `treeqmc.tre`.
-
-**Question C2:** Do the quartet support values from TREE-QMC agree with your calculations from activity B?
-
-*Tip: If you are having trouble looking at quartet support in the newick string, try looking at the table `treeqmc_table.txt`.*
