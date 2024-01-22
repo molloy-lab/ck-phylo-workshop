@@ -2,7 +2,7 @@ Activity D (Optional): Evaluate pseudolikelihood and check goodness of fit
 ===
 
 Lastly, let's evaluate the estimated tree by computing pseudolikelihood with [PhyloNetworks](https://crsl4.github.io/PhyloNetworks.jl/latest/). 
-The pseudolikelihood function computes the expected quartet concordance factors (CFs) under the model species tree as well as the observed quartet CFs in the input gene trees; thus, goodness of fit can also be evaluated.
+The pseudolikelihood function computes the expected quartet concordance factors (CFs) from the model species tree as well as the observed quartet CFs from the input gene trees; thus, goodness of fit can also be evaluated.
 
 0. Remove the quartet support from the TREE-QMC tree e.g.
 ```
