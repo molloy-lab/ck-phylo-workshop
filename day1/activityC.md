@@ -72,8 +72,8 @@ The trees with branch support information can be visualized with [icytree](https
 3. Select `Enter tree directly...` from the dropdown menu
 4. Copying the text for the newick string into the box
 5. Click done
-2. Click on the blue `style` button, selecting `Enter tree directly...`
-3. Select `Internal node text` from the dropdown menu, then select `Label`
+2. Click on the blue `Style` button
+3. Select `Internal node text` from the dropdown menu and then select `Label`
 
 Now four values, labeled `q1`,`q2`,`q3`, and `EN`, should be displayed for each internal node in the tree.
 * `q1` is the fraction of quartets in the gene trees that agree with the branch in the specie stree
