@@ -7,15 +7,21 @@ Let's look at the model species tree below and determine the expected frequencie
 <img src="model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
-**Question B1:** What quartet is on species set `galGal,cryCin,rhePen,aptRow` in the model species tree above? What is the expected frequency of this quartet (call `q1`) in gene trees generated from the MSC model species tree above (and then unrooted)? What is the expected frequency of the two alternative quartets (call `q2` and `q3`)?
+**Question B1:** What quartet is on species set `galGal,cryCin,rhePen,aptRow` in the model species tree above? What are the two alternative quartet topologies/
 
-**Question B2:** Repeat questions A1 for species set: `aptRow,cryCin,rhePen,strCam`.
+**Question B2:** What is the probability of the quartet from question B1 given the MSC model species tree above? What is the probability of the two alternative quartets?
 
-**Question B3:** Repeat questions A1 for species set: `anoDid,cryCin,eudEle,tinGut`.
+<p align="center">
+<img src="quartets_low.jpg" alt="model" width="100%" height="auto"/>
+</p>
 
-**Question B4:** Repeat questions A1 for species set: `anoDid,eudEle,notPer,tinGut,`.
+**Question B3:** Repeat questions B1-B2 for species set: `aptRow,cryCin,rhePen,strCam`.
 
-**Question B5:** How do the expected quartet frequencies change with branch length in the model species tree?
+**Question B4:** Repeat questions B1-B2 for species set: `anoDid,cryCin,eudEle,tinGut`.
+
+**Question B5:** Repeat questions B1-B2 for species set: `anoDid,eudEle,notPer,tinGut,`.
+
+**Question B6:** How do the expected quartet frequencies change with branch length in the model species tree?
 
 ---
 
