@@ -69,7 +69,7 @@ END;
 
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
 
-6. Convert the log-likelihood $loglk$ of each gene tree into a probability via $e^{loglk}$.
+6. Convert the log-likelihood $x$ of each gene tree into a probability via $e^x$.
 
 **Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can we conclude whether the species tree is in the anomaly zone from this analysis?
 
