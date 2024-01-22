@@ -66,7 +66,7 @@ cat treeqmc.tre | \
 cat treeqmc_for_viz.tre
 ```
 
-The trees with branch support information can be visualized with [icytree](https://icytree.org).
+Then, do the following.
 
 1. Go to [https://icytree.org](https://icytree.org)
 2. Click on the blue `File` button
