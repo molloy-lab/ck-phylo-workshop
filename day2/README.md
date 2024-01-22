@@ -53,34 +53,41 @@ Data
 
 Group 1
 ---
-Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
+Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors).
 
-*  Recall from day 1 that TREE-QMC and ASTRAL are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)). TREE-QMC, in particular, weights quartets based on their relevance to a current subproblem in a way that does not perturb expected frequencies under MSC but has practical benefits for larger numbers of taxa [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
-* Note that the number of species in this lab is only 11, and both TREE-QMC and ASTRAL returned the same tree (given the same data set) in our analyses.
+*  Recall from day 1 that ASTRAL and TREE-QMC are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC, assuming true gene trees [[Mirarab *et al.*, 2014]] (https://doi.org/10.1093/bioinformatics/btu462)).
+*  Both of these methods returned the same tree (given the same data set) in our analyses.
+*  To interpret the results, it can be helpful to look at quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) for alignments and gene trees.
 
 
 Group 2
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
+*  Recall from day 1 that ASTRAL and TREE-QMC are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC, assuming true gene trees [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)).
 * The **support quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model". It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
-* Note that support weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* Support weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* To interpret the results, it can be helpful to look at quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) for alignments and gene trees.
 
 
 Group 3
 ---
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **length weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
 
+*  Recall from day 1 that ASTRAL and TREE-QMC are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC, assuming true gene trees [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)).
 * The **length quartet weighting** scheme was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC. It has since been implemented in TREE-QMC, and a related approach has been implemented in ASTRID [[Liu & Warnow, 2023]]](https://doi.org/10.1186/s13015-023-00230-6).
-* Note that length weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* Length weighting does not automatically build with ASTRAL/ASTER so we did not run it.
+* To interpret the results, it can be helpful to look at quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) for alignments and gene trees.
 
 
 Group 4
 ---
-Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). 
+Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors).
 
+* Recall from day 1 that ASTRAL and TREE-QMC are heuristics for the Maximum Quartet Support Species Tree problem, the optimal solution to which is a consistent estimator under the MSC, assuming true gene trees [[Mirarab *et al.*, 2014]](https://doi.org/10.1093/bioinformatics/btu462)).
 * The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve robustness of ASTRAL to gene tree estimation error (GTEE); it has since been implemented in TREE-QMC.
-* Note that ASTRAL-hybrid returned the same tree (given the same data set) as TREE-QMC-hybrid in our analyses.
+* Both TREE-QMC and ASTRAL-hybrid returned the same tree (given the same data set) in our analyses.
+* To interpret the results, it can be helpful to look at quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) for alignments and gene trees.
 
 Group 5
 ---
@@ -104,6 +111,7 @@ Group 7
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) to reconstruct a species tree from the CR1 presence / absence patterns
 
 * To learn more about this approach, see [Springer *et al.* (2020)](https://doi.org/10.1093/jhered/esz076) and [Molloy *et al.* (2021)](https://doi.org/10.1093/sysbio/syab086).
+* To interpret the results, it's important to look at quartet support and `EN` in the estimated species tree. This [example](../day1/quartet_support_example.md) shows how `EN` is impacted by polytomies in the input gene trees. The each CR1 presence/absence character is like a tree with one branch, separating species with the insertion from those without it. Thus, each character does not contain phylogenetic signal to resolve quartets on all subsets of species, reducing `EN`.
 
 
 Alternative activities if you have free time and don't want to try out other methods
