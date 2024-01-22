@@ -79,7 +79,7 @@ Go to **[Activity B](activityB.md)**.
 
 ---
 
-For later e.g. in all of your free time :)
+When trying this later :)
 ---
 
 The challenge in the above example is creating tree topologies that could have higher probability than the specie stree topology. 
