@@ -13,8 +13,9 @@ Let's consider the focal branch for the placement of Rhea (group **A**), which h
 
 The quartets *around* this focal branch have topology **a,b|c,d** where **a** is a taxon from group **A** (Rheas), **b** is from group **B** (Emu+Cassowary+Kiwis), **c** is from group **C** (Tinamous+Moa), and **d** is from the remainder of species called group **D** (Ostrich,Chicken). 
 
-Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch; this gives the first three topologies below (called `gt1`, `gt2`, `gt3`), all rooted at the outgroup `galGal`.
-A fourth tree (called `gt4`) is created by taking `gt3`, splitting clade `B` into `B1` (Emu+Cassowary) and `B2` (Kiwis), detaching clade `C`, and then re-connecting it to clade `B1`.
+Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch in the species tree (also `gt1` below); this gives `gt2` and `gt3`.
+A fourth tree (`gt4`) is created by taking `gt3`, splitting clade `B` into `B1` (Emu+Cassowary) and `B2` (Kiwis), detaching clade `C`, and then re-connecting it to clade `B1`. 
+All of these trees are rooted at the outgroup `galGal`.
 
 ```
 gt1 = ((((A,(B1,B2)),C),strCam),galGal);
