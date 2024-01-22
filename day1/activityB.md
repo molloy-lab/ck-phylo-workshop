@@ -19,7 +19,7 @@ If you estimate a species tree from gene trees, you may be interested in quantif
 
 **Question B4:** Repeat questions B1-B2 for species set: `anoDid,cryCin,eudEle,tinGut`.
 
-**Question B5:** Repeat questions B1-B2 for species set: `anoDid,eudEle,notPer,tinGut,`.
+**Question B5:** Repeat questions B1-B2 for species set: `anoDid,eudEle,notPer,tinGut`.
 
 **Question B6:** How do the expected quartet frequencies change with branch length in the model species tree?
 
