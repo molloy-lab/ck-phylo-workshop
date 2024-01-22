@@ -11,9 +11,10 @@ If it is in the anomaly zone, there must be (at least) one tree topology that do
 
 Let's consider the focal branch for the placement of Rhea (group **A**), which has length 0.008906 CUs.
 
-The quartets *around* this focal branch have topology **a,b|c,d** where **a** is a taxon from group **A** (Rheas), **b** is from group **B** (Emu+Cassowary+Kiwis), **c** is from group **C** (Tinamous+Moa), and **d** is from the outgroup **D** (Ostrich/Chicken). 
+The quartets *around* this focal branch have topology **a,b|c,d** where **a** is a taxon from group **A** (Rheas), **b** is from group **B** (Emu+Cassowary+Kiwis), **c** is from group **C** (Tinamous+Moa), and **d** is from the remainder of species called group **D** (Ostrich,Chicken). 
 
-Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch; this gives the 3 topologies below, all rooted at the outgroup `galGal` (in addition to topology created by taking `gt3` and slitting clade B into B1 and B2).
+Alternative topologies for the placement of Rhea can be created by performing Nearest Neighbor Interchanges (NNIs) around the focal branch; this gives the first 3 topologies below, all rooted at the outgroup `galGal`.
+A fourth tree is created by taking `gt3`, splitting clade `B` into `B1` and `B2`, and detaching clade `C` to be re-connecting it to clade `B1`.
 
 ```
 gt1 = ((((A,(B1,B2)),C),strCam),galGal);
@@ -31,14 +32,14 @@ B2 = (aptRow,(aptOwe,aptHaa))
 C = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
 ```
 
-To compute the probability of these topologies under the MSC model species tree, try the following.
+To compute the probability of these topologies under the MSC model species tree, do the following.
 1. Create a NEXUS file (e.g. `compute_loglk.nex`)
 2. Copy the text below into the file
 ```
 #NEXUS
 
 BEGIN TREES;
-tree gt1 = <add newick string here>
+tree gt1 = (((((rhePen,rheAme),((droNov,casCas),(aptRow,(aptOwe,aptHaa)))),(((notPer,eudEle),(tinGut,cryCin)),anoDid)),strCam),galGal);
 tree gt2 = <add newick string here>
 tree gt3 = <add newick string here>
 tree gt4 = <add newick string here>
@@ -55,7 +56,7 @@ CalGTProb st (gt3);
 CalGTProb st (gt4);
 END;
 ```
-3. Fill in the newick strings for  `gt1`, `gt2`, `gt3`, and `gt4` by combining the newick strings above
+3. Fill in the newick strings for  `gt2`, `gt3`, and `gt4` by combining the newick strings above. To create the string for `gt1`, I copied the string for `gt1` into the NEXUS file. Then, I replaced the `A` in the newick string for `gt1` with the newick string for clade `A`, continuing for clades `B1`, `B2`, and `C`.
 4. Add the newick string for the model species tree
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
 6. Convert the log-likelihood of each gene tree into a probability via $e^{loglk}$.
@@ -76,7 +77,10 @@ gt3 = (((aptRow,droNov),notPer),rhePen);
 gt4 = (((droNov,notPer),aptRow),rhePen);
 ```
 
-**Question A3:** Try to compute the probabilities of the four rooted gene trees by hand (using PhyloNet to check your work). How does the calculation for the balanced (or symmetric) topology (`gt2`) differ from the pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
+Compute the probabilities of `gt1`, `gt2`, `gt3`, and `gt4` with PhyloNet, as above.
+Now try to compute the probabilities of the four rooted gene trees by hand.
+
+**Question A3:** How does the calculation for the balanced (or symmetric) topology (`gt2`) differ from the pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
 
 *Tip: Read [Degnan and Rosenberg (2006)](https://doi.org/10.1371/journal.pgen.0020068).*
 
