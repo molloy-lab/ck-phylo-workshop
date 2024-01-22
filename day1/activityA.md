@@ -82,7 +82,7 @@ Go to **[Activity B](activityB.md)**.
 When trying this later :)
 ---
 
-The challenge in the above example is creating tree topologies that could have higher probability than the specie stree topology. 
+The challenge in the above example is creating tree topologies that could have higher probability than the specie tree topology. 
 
 To build intuition on how this is done, restrict the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C); this produces the following trees: 
 
