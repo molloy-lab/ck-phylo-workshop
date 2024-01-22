@@ -33,7 +33,7 @@ B2 = (aptRow,(aptOwe,aptHaa))
 C = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
 ```
 
-To compute the probability of these topologies under the MSC model species tree, do the following.
+To compute the probability of these topologies given the MSC model species tree, do the following.
 1. Create a NEXUS file (e.g. `compute_loglk.nex`)
 
 2. Copy the text below into the file
