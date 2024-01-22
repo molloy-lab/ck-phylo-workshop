@@ -7,7 +7,7 @@ In this lab, we will analyze gene trees **simulated** based on the ASTRAL UCE sp
 <img src="images/model-species-tree-v2-annotated.png" alt="model" width="100%" height="auto"/>
 </p>
 
-The lab today is fairly structured with lots of commands provided - it's also kind-of long... don't worry, the lab tomorrow is shorter and more open-ended.  
+The lab today is very structured with lots of commands provided - it's also kind-of long... don't worry, the lab tomorrow is shorter and more open-ended.  
 
 Data files
 ---
