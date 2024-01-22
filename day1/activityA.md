@@ -96,7 +96,7 @@ gt4 = (((droNov,notPer),aptRow),rhePen);
 ```
 
 Compute the probabilities of `gt1`, `gt2`, `gt3`, and `gt4` with PhyloNet.
-Now compute the probabilities of the four rooted gene trees by hand (look at the slides for helpful equations).
+Now compute the probabilities of the four rooted gene trees by hand (see the slides for some useful equations).
 
 **Question A3:** Based on this calculation, why does the balanced (or symmetric) topology (`gt2`) have higher probability than the pectinate (or assymetric) topologies  (`gt1`, `gt3`, and `gt4`)?
 
