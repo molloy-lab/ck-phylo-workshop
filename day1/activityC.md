@@ -1,7 +1,7 @@
 Activity C: Run quartet-based summary methods
 ===
 
-Now let's reconstruct a species tree from gene trees simulated under the model species tree below.
+In activities A and B, you used a model species tree; however, in practice, you will need to reconstruct it from data. Let's reconstruct a species tree from 10,000 (!) gene trees simulated under the model species tree below.
 
 <p align="center">
 <img src="images/model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
