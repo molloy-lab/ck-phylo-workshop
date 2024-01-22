@@ -56,8 +56,9 @@ Group 1
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). To interpret the results, consider quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) reported for the input gene trees and their alignments.
 
 Notes:
-* TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
-* In these labs, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness).
+* Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
+* In today's lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness); thus we focus on TREE-QMC.
 
 
 Group 2
@@ -65,7 +66,8 @@ Group 2
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). To interpret the results, consider quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) reported for the input gene trees and their alignments.
 
 Notes:
-* TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
 * **Quartet weighting based on branch support** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model".
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction; a related weighting scheme has also been implemented in the distance-based summary method ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
 * The support weighting scheme did not automatically build with ASTRAL/ASTER so we did not run it.
@@ -76,7 +78,8 @@ Group 3
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **length weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). To interpret the results, consider quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) reported for the input gene trees and their alignments.
 
 Notes:
-* TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
 * **Quartet weighting based on branch length** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the lengths of their *terminal* branches (longer branches are downweighted and shorter branches are upweighted); this approach is consistent under the MSC.
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction; a related weighting scheme has also been implemented in the distance-based summary method ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
 * Length weighting did not automatically build with ASTRAL/ASTER so we did not run it.
@@ -87,18 +90,19 @@ Group 4
 Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **hybrid weighting** on all four sets of gene trees: CNEEs, introns, UCEs, and UCEs (minus 105 loci with homology errors). To interpret the results, consider quartet support in the estimated species tree as well as the [summary metrics](../data/abayes-gene-trees/README.md) reported for the input gene trees and their alignments.
 
 Notes: 
-* TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
+* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
 * The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE).
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction.
-* In these labs, both TREE-QMC-hybrid and ASTRAL-hybrid return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness).
+* In today's lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness); thus we focus on TREE-QMC.
 
 Group 5
 ---
 Run the coalescent site-based method **SVDQuartets** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
-* SVDquartets estimates a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039), and it conveniently bypasses gene tree estimation (and thus problems with gene tree estimation error). This does not mean the input are guaranteed to be error-free (there can be homology errors and alignment errors) or that there will not be other model violations.
+* SVDquartets estimates a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039) and conveniently bypasses gene tree estimation -- and thus problems with gene tree estimation error. However, there can still be errors (from ortholog identification and alignment) as well as model violations (e.g., selection or heterotachy).
 * To learn about the SVDquartets method, see [Chifman & Kubatko (2014)](https://doi.org/10.1093/bioinformatics/btu530) and [Chifman & Kubatko (2015)](https://doi.org/10.1016/j.jtbi.2015.03.006).
-*  SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
+* SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
 * Check out this [tutorial](https://www.asc.ohio-state.edu/kubatko.2//phylogenomics2019/SpeciesTreeTutorial.html).
 
 Group 6
@@ -111,10 +115,12 @@ Run the new coalescent site-based methods **CASTER-site** and **CASTER-pair** on
 
 Group 7
 ---
-Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) to reconstruct a species tree from the CR1 presence / absence patterns
+Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) to reconstruct a species tree from the CR1 presence / absence patterns via quartets
 
 * To learn more about this approach, see [Springer *et al.* (2020)](https://doi.org/10.1093/jhered/esz076) and [Molloy *et al.* (2021)](https://doi.org/10.1093/sysbio/syab086).
-* To interpret the results, it's important to look at quartet support and `EN` in the estimated species tree. This [example](../day1/quartet_support_example.md) shows how `EN` is impacted by polytomies in the input gene trees. The each CR1 presence/absence character is like a tree with one branch, separating species with the insertion from those without it. Thus, each character does not contain phylogenetic signal to resolve quartets on all subsets of species, reducing `EN`.
+* The main benefit is that the presence/absence of low-homoplasy insertions across genomes may be more robust to error than estimated gene trees. Moreover, such insertions may be less likely to be observed in regions of the genome under selection, thus fitting the neutrality assumption of the MSC.
+* However, each CR1 presence/absence character is like a tree with only one branch, separating species with the insertion from those without it. Thus, a single character may not contain any quartets that inform how to resolve a particular branch in the species tree.
+* Thus, when interpreting the results, it's important to look at effective number (`EN`) of markers with information to resolve each branch in the estimated species tree; for more details, see this [example](../day1/quartet_support_example.md).
 
 
 Alternative activities if you have free time and don't want to try out other methods
@@ -125,8 +131,7 @@ Try evaluating the quality of **two** different species tree topologies found in
 Dicussion Questions
 ---
 
-1. What are the pros and cons of each type of method broadly speaking?
-2. How do these pros/cons relate to the Palaeognathae tree and the data types explored in this lab?
-3. What are some possible reasons for the differences across methods or data types?
-4. This lab focused on gene tree heterogeneity due to ILS and GTEE. What are some other sources of gene tree heterogeneity? Could these be an issue for Palaeognathae? How would explore these issues further?
-5. What follow-up analyses would you want to do if you had unlimited time, money, etc?
+1. What are some possible reasons for the differences in species trees across methods and/or data types? How would you explain the differences in species trees when running TREE-QMC with different settings on the UCEs? How would you explain the differences in species trees when running different versions of CASTER?
+2. Given the pros/cons of different methods and the data types explored in this lab, are you convinced of a single species tree for *Palaeognathae*? If so, why? If not, what follow-up analyses would you recommend given unlimited resources?
+3. This lab focused on gene tree heterogeneity due to ILS, GTEE, and data type. What are some other sources of gene tree heterogeneity? Could these be an issue for *Palaeognathae*? How would explore these issues further?
+4. Are ILS, GTEE, and data type concerns for your study system?
