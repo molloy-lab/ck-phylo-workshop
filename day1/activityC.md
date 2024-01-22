@@ -4,14 +4,14 @@ Activity C: Run quartet-based summary methods
 Now let's reconstruct a species tree from gene trees simulated under the model species tree below.
 
 <p align="center">
-<img src="model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
+<img src="images/model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
 This lab focuses on coalescent methods based on quartets, the earliest of which was perhaps Bucky-pop [[Ane *et al.*, 2006](https://doi.org/10.1093/molbev/msl170); [Larget *et al.*, 2010](https://doi.org/10.1093/bioinformatics/btq539)].
 The popular summary method, ASTRAL, is a heursitic for the Maximum Quartet Support Species Tree (MQSST) problem, which seeks a tree to maximize the number of quartets shared between it and the input gene trees; see [[Mirarab *et al.,* 2014]](https://doi.org/10.1093/bioinformatics/btu462).
 
 <p align="center">
-<img src="mqsst_low.jpg" alt="model" width="100%" height="auto"/>
+<img src="images/mqsst_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
 There are several benefits to quartet-based summary methods: 

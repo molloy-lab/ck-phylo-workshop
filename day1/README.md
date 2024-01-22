@@ -4,7 +4,7 @@ Coalescent Lab - Day 1
 In this lab, we will analyze gene trees **simulated** based on the ASTRAL UCE species tree from [Cloutier et al. (2019)](https://doi.org/10.1093/sysbio/syz019).
 
 <p align="center">
-<img src="model-species-tree-v2-annotated.png" alt="model" width="100%" height="auto"/>
+<img src="images/model-species-tree-v2-annotated.png" alt="model" width="100%" height="auto"/>
 </p>
 
 The lab today is fairly structured with lots of commands provided. For tomorrow's lab, you will be able to reference the commands from today when applying them to biological data as well as look up more advanced options.
@@ -15,7 +15,7 @@ Data files
 | Data | File |
 | --- | --- |
 | MSC model species tree| [`../data/simulations/model-species-tree.tre`](../data/simulations/model-species-tree.tre) | 
-| Simulated gene trees | [`../data/simulations/simulated-gene-trees.tre`](../data/simulations/simulated-gene-trees.tre) |
+| 10,000 gene trees simulated from model species tree| [`../data/simulations/simulated-gene-trees.tre`](../data/simulations/simulated-gene-trees.tre) |
 
 
 Before you begin
