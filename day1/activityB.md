@@ -9,7 +9,7 @@ If you estimate a species tree from gene trees, you may be interested in quantif
 
 **Question B1:** What quartet is on species set `galGal,cryCin,rhePen,aptRow` in the model species tree above? What are the two alternative quartet topologies?
 
-**Question B2:** What is the probability of the quartet from question B1 given the MSC model species tree above? What is the probability of the two alternative quartets?
+**Question B2:** Looking at the formulas below, what is the probability of the quartet from question B1 given the MSC model species tree above? What is the probability of the two alternative quartets?
 
 <p align="center">
 <img src="images/quartets_low.jpg" alt="model" width="100%" height="auto"/>
