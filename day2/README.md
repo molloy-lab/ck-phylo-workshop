@@ -96,7 +96,7 @@ Group 5
 ---
 Run the coalescent site-based method **SVDQuartets** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
-* SVDquartets estimated a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039).
+* SVDquartets estimates a species tree from the conatenated alignment on subsets of four taxa using the singular value decomposition (SVD); these quartets are then assembled into a species tree. This approach is consistent under the MSC+GTR model [[Wascher & Kubatko, 2021]](https://doi.org/10.1093/sysbio/syaa039), and it conveniently bypasses gene tree estimation (and thus problems with gene tree estimation error). This does not mean the input are guaranteed to be error-free (there can be homology errors and alignment errors) or that there will not be other model violations.
 * To learn about the SVDquartets method, see [Chifman & Kubatko (2014)](https://doi.org/10.1093/bioinformatics/btu530) and [Chifman & Kubatko (2015)](https://doi.org/10.1016/j.jtbi.2015.03.006).
 *  SVDquartets is implemented in [PAUP*](https://paup.phylosolutions.com).
 * Check out this [tutorial](https://www.asc.ohio-state.edu/kubatko.2//phylogenomics2019/SpeciesTreeTutorial.html).
@@ -106,7 +106,7 @@ Group 6
 Run the new coalescent site-based methods **CASTER-site** and **CASTER-pair** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
 * CASTER is implemented as part of [ASTRAL/ASTER](https://github.com/chaoszhang/ASTER/).
-* To learn more about the CASTER, check out this recent and exciting preprint: [Zhang *et al.* (2023)](https://doi.org/10.1101/2023.10.04.560884).
+* To learn more about the CASTER, check out this very recent and exciting preprint: [Zhang *et al.* (2023)](https://doi.org/10.1101/2023.10.04.560884).
 
 
 Group 7
