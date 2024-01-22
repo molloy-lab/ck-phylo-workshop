@@ -71,7 +71,7 @@ Then, do the following.
 1. Go to [https://icytree.org](https://icytree.org)
 2. Click on the blue `File` button
 3. Select `Enter tree directly...` from the dropdown menu
-4. Copying the text for the newick string into the box
+4. Copy the text for the newick string into the box
 5. Click done
 2. Click on the blue `Style` button
 3. Select `Internal node text` from the dropdown menu and then select `Label`
