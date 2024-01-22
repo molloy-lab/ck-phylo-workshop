@@ -8,7 +8,7 @@ In this lab, we will estimate species trees on data sets from [Cloutier *et al.*
 </p>
 
 
-To fill in the table below, let's divide-and-conquer into ~7 groups. If your group finishes your portion of the table, try out some of the other analyses, prioritizing what you are interested in.
+To fill in the table below, let's divide-and-conquer into ~7 groups. If your group finishes your portion of the table, try out some of the other analyses, prioritizing what you are interested in, or go back and work on the day 1 lab, or relax. :)
 
 | Data | Study | Method Type | Method | Species Tree Topology | Probability under MSC model species tree from day 1 | 
 | --- | --- | --- | --- | --- | --- |
