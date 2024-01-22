@@ -1,13 +1,13 @@
 Activity B: Calculate expected quartet frequencies by hand
 ===
 
-Let's look at the model species tree below and determine the expected frequencies of quartets in the gene trees by hand. 
+Let's compute compute the expected frequencies of quartets in the gene trees for the MSC model species tree below. 
 
 <p align="center">
 <img src="model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
-**Question B1:** What quartet is on species set `galGal,cryCin,rhePen,aptRow` in the model species tree above? What are the two alternative quartet topologies/
+**Question B1:** What quartet is on species set `galGal,cryCin,rhePen,aptRow` in the model species tree above? What are the two alternative quartet topologies?
 
 **Question B2:** What is the probability of the quartet from question B1 given the MSC model species tree above? What is the probability of the two alternative quartets?
 
