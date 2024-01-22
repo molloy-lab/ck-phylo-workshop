@@ -7,7 +7,7 @@ Activity A: Check if the model species tree is in the anomaly zone
 <img src="images/model-species-tree-v2-annotated_low.jpg" alt="model" width="100%" height="auto"/>
 </p>
 
-If it is in the anomaly zone, there must be (at least) one tree topology that is different than the species tree topology and has a higher probability than it under the MSC. Our goal is to come up with topologies that may have a higher probability than the species tree topology.
+If it is in the anomaly zone, there must be (at least) one tree topology that is different than the species tree topology and has a higher probability than it under the MSC. Our goal is to come up with topologies that may have a higher probability than the species tree topology and then evaluate their likelihood to check.
 
 Let's consider the focal branch for the placement of Rhea (group **A**), which has length 0.008906 CUs.
 
