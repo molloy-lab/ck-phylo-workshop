@@ -27,7 +27,7 @@ TREE-QMC introduces a new algorithm that enables the Quartet Max Cut (QMC) appro
 TREE-QMC also improves accuracy for large and error-prone input gene trees via "quartet graph normalization".
 In simulations, these features make TREE-QMC as accurate as ASTER, and more accurate than ASTER in some model conditions, like large numbers of taxa (500-1000).
 On the other hand, ASTER is faster when using multi-threading and may be more accurate in scenarios not yet explored.
-In any case, for small data sets with accurate gene trees, like those being used in today's lab, all summary methods should perform very well for both speed and accuracy.
+In any case, for small data sets with accurate gene trees, like those being used in today's lab, all summary methods should perform well for both speed and accuracy.
 
 To run ASTRAL/[ASTER](https://github.com/chaoszhang/ASTER/), use the command:
 ```
