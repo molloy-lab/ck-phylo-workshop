@@ -34,6 +34,7 @@ C = (((notPer,eudEle),(tinGut,cryCin)),anoDid)
 
 To compute the probability of these topologies under the MSC model species tree, do the following.
 1. Create a NEXUS file (e.g. `compute_loglk.nex`)
+
 2. Copy the text below into the file
 ```
 #NEXUS
@@ -56,17 +57,27 @@ CalGTProb st (gt3);
 CalGTProb st (gt4);
 END;
 ```
-3. Fill in the newick strings for  `gt2`, `gt3`, and `gt4` by combining the newick strings above. To create the string for `gt1`, I copied the string for `gt1` into the NEXUS file. Then, I replaced the `A` in the newick string for `gt1` with the newick string for clade `A`, continuing for clades `B1`, `B2`, and `C`.
+
+3. Fill in the newick strings for  `gt2`, `gt3`, and `gt4` by combining the newick strings above.
+
+*Tip: Try replicating the result for `gt1` by copying the newick string for `gt1` into the NEXUS file, replacing the `A` with `(rhePen,rheAme)`, and repeating for clades `B1`, `B2`, and `C`.*
+
 4. Add the newick string for the model species tree
+
+*Tip: Use the command `cat model-species-tree.tre` to see the newick string.*
+
 5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
+
 6. Convert the log-likelihood of each gene tree into a probability via $e^{loglk}$.
 
-**Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can you conclude whether the species tree is in the anomaly zone from this analysis?
+**Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can we conclude whether the species tree is in the anomaly zone from this analysis?
 
 For later e.g. on the flight home :)
 ---
 
-Consider restricting the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C); this produces the following trees: 
+The challenge in the above example is creating tree topologies that could have higher probability than the specie stree topology. 
+
+To build intuition on how this is done, restrict the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C); this produces the following trees: 
 
 ```
 st = (((rhePen,(aptRow,droNov):0.553644):0.008906),notPer);
@@ -77,10 +88,10 @@ gt3 = (((aptRow,droNov),notPer),rhePen);
 gt4 = (((droNov,notPer),aptRow),rhePen);
 ```
 
-Compute the probabilities of `gt1`, `gt2`, `gt3`, and `gt4` with PhyloNet, as above.
-Now try to compute the probabilities of the four rooted gene trees by hand.
+Compute the probabilities of `gt1`, `gt2`, `gt3`, and `gt4` with PhyloNet.
+Now compute the probabilities of the four rooted gene trees by hand (look at the slides for helpful equations).
 
-**Question A3:** How does the calculation for the balanced (or symmetric) topology (`gt2`) differ from the pectinate (or assymetric) topologies (`gt1`, `gt3`, and `gt4`)?
+**Question A3:** Based on this calculation, why does the balanced (or symmetric) topology (`gt2`) have higher probability than the pectinate (or assymetric) topologies  (`gt1`, `gt3`, and `gt4`)?
 
 *Tip: Read [Degnan and Rosenberg (2006)](https://doi.org/10.1371/journal.pgen.0020068).*
 
