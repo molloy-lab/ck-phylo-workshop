@@ -72,6 +72,12 @@ END;
 
 **Question A2:** Which of `gt1`, `gt2`, `gt3`, or `gt4` has the highest probability? Can we conclude whether the species tree is in the anomaly zone from this analysis?
 
+---
+
+Go to **[Activity B](activityB.md)**.
+
+---
+
 For later e.g. on the flight home :)
 ---
 
@@ -98,7 +104,3 @@ Now compute the probabilities of the four rooted gene trees by hand (look at the
 Credits
 ---
 * [PhyloNet Manual](https://phylogenomics.rice.edu/html/commands/CalGTProb.html)
-
----
-
-Go to **[Activity B](activityB.md)**.
