@@ -1,20 +1,7 @@
----
-title : "testing"
-author : "me"
-date : "idk"
-output:
-  html_document:
-    code_folding: "hide"
----
-
 Activity A: Check if the model species tree is in the anomaly zone
 ===
 
 If you estimate a species tree, a basic question to address is whether it is in the anomaly zone, motivating the use of coalescent methods.
-
-```{bash, eval=FALSE}
-blah blah
-```
 
 **Question A1:** Looking at the model species tree below, would guess that it is in the anomaly zone? Why or why not?
 
