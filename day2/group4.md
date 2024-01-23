@@ -1,4 +1,4 @@
-Group 4
+Group 4 Activity
 ===
 
 In this lab, we will estimate species trees on data sets from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) using coalescent quartet-based methods. We will then compare and contrast the relationship between clades A, B1, B2, and C across the different methods and data types.
@@ -38,5 +38,5 @@ Notes:
 * Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
 * Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
 * The **hybrid quartet weighting scheme**, which combines length and support weighting, was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE).
-* To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for (normalized) quartet graph construction.
-* In today's lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness); thus we focus on TREE-QMC.
+* To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for building the (normalized) quartet graph.
+* In this lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness), so we focus on TREE-QMC.

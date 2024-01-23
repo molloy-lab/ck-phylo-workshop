@@ -41,13 +41,13 @@ To fill in the table below, let's divide-and-conquer into ~7 groups. If your gro
 Groups
 ---
 
-* [Group 1 Lab](group1.md)
-* [Group 2 Lab](group2.md)
-* [Group 3 Lab](group3.md)
-* [Group 4 Lab](group4.md)
-* [Group 5 Lab](group5.md)
-* [Group 6 Lab](group6.md)
-* [Group 7 Lab](group7.md)
+* [Group 1 Activity](group1.md)
+* [Group 2 Activity](group2.md)
+* [Group 3 Activity](group3.md)
+* [Group 4 Activity](group4.md)
+* [Group 5 Activity](group5.md)
+* [Group 6 Activity](group6.md)
+* [Group 7 Activity](group7.md)
 
 
 Other fun activities

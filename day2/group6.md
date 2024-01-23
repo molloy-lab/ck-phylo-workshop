@@ -1,4 +1,4 @@
-Group 6
+Group 6 Activity
 ===
 
 In this lab, we will estimate species trees on data sets from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) using coalescent quartet-based methods. We will then compare and contrast the relationship between clades A, B1, B2, and C across the different methods and data types.
@@ -28,7 +28,7 @@ Data
 
 Analysis
 ---
-Run the new coalescent site-based methods **CASTER-site** and **CASTER-pair** on the concatenated UCE alignment (minus 105 loci with homology errors).
+Run the coalescent site-based methods **CASTER-site** and **CASTER-pair** on the concatenated UCE alignment (minus 105 loci with homology errors).
 
 Notes:
 * CASTER is implemented as part of [ASTRAL/ASTER](https://github.com/chaoszhang/ASTER/).

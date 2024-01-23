@@ -1,4 +1,4 @@
-Group 1
+Group 1 Activity
 ===
 In this lab, we will estimate species trees on data sets from [Cloutier *et al.* (2019)](https://doi.org/10.1093/sysbio/syz019) using coalescent quartet-based methods. We will then compare and contrast the relationship between clades A, B1, B2, and C across the different methods and data types.
 
@@ -37,4 +37,4 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all
 Notes:
 * Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
 * Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
-* In today's lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness), so we focus on TREE-QMC.
+* In this lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness), so we focus on TREE-QMC.
