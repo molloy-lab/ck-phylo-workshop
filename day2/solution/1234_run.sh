@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-exit
+#exit
 
 INDIR="../../data/abayes-gene-trees/"
 
@@ -11,51 +11,65 @@ GTRES=( "CNEE_abayes_gene_trees_sorted.tre" \
 
 for GTRE in ${GTRES[@]}; do
     # Run TREEQMC
-    treeqmc \
-        --root galGal \
-        --support \
-        --writetable treeqmc-$GTRE-table.csv \
-        -i $INDIR/$GTRE \
-        -o treeqmc-$GTRE
+    #treeqmc \
+    #    --root galGal \
+    #    --support \
+    #    --writetable treeqmc-$GTRE-table.csv \
+    #    -i $INDIR/$GTRE \
+    #    -o treeqmc-$GTRE
 
     # Run Weighted TREEQMC
-    treeqmc \
-        --hybrid \
-        --bayes \
-        --root galGal \
-        --support \
-        --writetable treeqmc-hybrid-$GTRE-table.csv \
-        -i $INDIR/$GTRE \
-        -o treeqmc-hybrid-$GTRE
+    #treeqmc \
+    #    --hybrid \
+    #    --bayes \
+    #    --root galGal \
+    #    --support \
+    #    --writetable treeqmc-hybrid-$GTRE-table.csv \
+    #    -i $INDIR/$GTRE \
+    #    -o treeqmc-hybrid-$GTRE
 
-    treeqmc \
-        -w l \
-        --root galGal \
-        --support \
-        --writetable treeqmc-length-$GTRE-table.csv \
-        -i $INDIR/$GTRE \
-        -o treeqmc-length-$GTRE
+    #treeqmc \
+    #    -w l \
+    #    --root galGal \
+    #    --support \
+    #    --writetable treeqmc-length-$GTRE-table.csv \
+    #    -i $INDIR/$GTRE \
+    #    -o treeqmc-length-$GTRE
 
-    treeqmc \
-        -w s \
-        --bayes \
-        --root galGal \
-        --support \
-        --writetable treeqmc-support-$GTRE-table.csv \
-        -i $INDIR/$GTRE \
-        -o treeqmc-support-$GTRE
+    #treeqmc \
+    #    -w s \
+    #    --bayes \
+    #    --root galGal \
+    #    --support \
+    #    --writetable treeqmc-support-$GTRE-table.csv \
+    #    -i $INDIR/$GTRE \
+    #    -o treeqmc-support-$GTRE
 
     # Run ASTRAL
-    astral \
-        --root galGal \
-        -i $INDIR/$GTRE \
-        -o astral-$GTRE
+    #astral \
+    #    --root galGal \
+    #    -i $INDIR/$GTRE \
+    #    -o astral-$GTRE
 
     # Run Weighted ASTRAL
     astral-hybrid \
+        --mode 2 \
         --bayes \
         --root galGal \
         -i $INDIR/$GTRE \
-        -o astral-hybrid-$GTRE
+        -o astral-support-$GTRE
+
+    astral-hybrid \
+        --mode 3 \
+        --bayes \
+        --root galGal \
+        -i $INDIR/$GTRE \
+        -o astral-length-$GTRE
+
+    #astral-hybrid \
+    #    --bayes \
+    #    --root galGal \
+    #    -i $INDIR/$GTRE \
+    #    -o astral-hybrid-$GTRE
 done
 

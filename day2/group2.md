@@ -17,7 +17,6 @@ Table
 | intron | group 2 | GT Summary | TREE-QMC-support |  |  |
 | UCE +105 | group 2 | GT Summary | TREE-QMC-support  |  |  |
 | UCE -105 | group 2 | GT Summary | TREE-QMC-support |  |  |
-| UCE -105 | Simmons *et al.* (2022) | Concatenation | Partitioned RAxML | `(((((B1,C),B2),A),strCam),galGal);` | 0.0019 |
 
 
 Data
@@ -37,7 +36,7 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) with **support weight
 
 Notes:
 * Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
-* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
-* **Quartet weighting based on branch support** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to gene tree estimation error (GTEE). It weights quartets by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model".
+* Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or  errors made earlier during ortholog identification and/or multiple sequence alignment.
+* **Weighting quartets based on branch support** in the input gene trees was introduced by [Zhang & Mirarab (2022)](https://doi.org/10.1093/molbev/msac215) to improve the robustness of ASTRAL to GTEE. Quartets are weighted by the support of their *internal* branch (lower support is downweighted and higher support is upweighted); this approach is consistent under the "MSC+Random Noise+Support model".
 * To take advantage of this weighting scheme within TREE-QMC, we developed a new algorithm for building the (normalized) quartet graph; a related weighting scheme has also been implemented in the distance-based summary method ASTRID [[Liu & Warnow, 2023]](https://doi.org/10.1186/s13015-023-00230-6).
-* The support weighting scheme did not automatically build with ASTRAL/ASTER so we did not run it.
+* In this lab, both TREE-QMC and ASTRAL return the same tree given the same data set and same parameter settings e.g. support weighting (which is expected since these data sets have a small number of taxa and low missingness), so we focus on running TREE-QMC.

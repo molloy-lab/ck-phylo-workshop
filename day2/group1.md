@@ -16,7 +16,6 @@ Table
 | intron | group 1 | GT Summary | TREE-QMC / ASTRAL |  |  |
 | UCE +105 | group 1 | GT Summary | TREE-QMC / ASTRAL |  |  |
 | UCE -105 | group 1 | GT Summary | TREE-QMC / ASTRAL |  |  |
-| UCE -105 | Simmons *et al.* (2022) | Concatenation | Partitioned RAxML | `(((((B1,C),B2),A),strCam),galGal);` | 0.0019 |
 
 
 Data
@@ -37,4 +36,4 @@ Run [**TREE-QMC**](https://github.com/molloy-lab/TREE-QMC) (default mode) on all
 Notes:
 * Recall that the gene tree summary methods TREE-QMC and ASTRAL were introduced in the [Day 1 Lab](../day1/activityC.md).
 * Gene tree summary methods are susceptible to gene tree estimation error (GTEE), which could be the result of low phylogenetic signal (if sequences are highly conserved), model violations (e.g., selection or heterotachy), or earlier errors made during ortholog identification and/or multiple sequence alignment.
-* In this lab, both TREE-QMC and ASTRAL return the same tree given the same data set (as expected since these data sets have a small number of taxa and low missingness), so we focus on TREE-QMC.
+* In this lab, both TREE-QMC and ASTRAL return the same tree given the same data set and same parameter settings (which is expected since these data sets have a small number of taxa and low missingness), so we focus on running TREE-QMC.
