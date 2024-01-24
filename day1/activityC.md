@@ -15,10 +15,10 @@ One of the most popular summary methods today, ASTRAL, is a heursitic for the Ma
 </p>
 
 There are several benefits to quartet-based summary methods: 
-1. The most probable quartet agrees with the species tree, so the optimal solution to MQSST is a consistent estimator under the MSC [[Mirarab *et al.,* 2014]](https://doi.org/10.1093/bioinformatics/btu462).
+1. The most probable quartet agrees with the species tree, so the optimal solution to MQSST is a consistent estimator under the MSC [[Mirarab *et al.,* 2014]](https://doi.org/10.1093/bioinformatics/btu462)
 2. For pseudolikelhood methods, which are also consistent, the likelihood of quartets is easy to evaluate (you just did this calculation by hand in activity B!)
-3. The input to these methods are unrooted gene trees (so you don't need to worry about rooting the output of popular tools for gene tree estimation)
-4. Many fast and accurate quartet-based methods have been developed
+3. The input to these methods are unrooted gene trees, so you don't need to worry about rooting the output of popular gene tree estimation methods.
+4. Many fast and accurate quartet-based methods have been developed.
 
 ASTRAL, in particular, has had several versions since it was introduced in 2014.
 The lastest version, called ASTER, uses a different algorithmic approach that is more robust to missing data the previous one [[Zhang & Mirarab, 2022]](https://doi.org/10.1093/molbev/msac215).
