@@ -6,7 +6,7 @@ The pseudolikelihood function computes the expected quartet concordance factors 
 
 0. Remove the branch support information from the TREE-QMC tree e.g. use the command:
 ```
-cat treeqmc.tre | sed "s/\'/\n/g" | sed '/^\[/d' | tr -d "\n" > treeqmc_noqs.tre
+cat treeqmc.tre | sed "s/'/\n/g" | sed '/^\[/d' | tr -d "\n" > treeqmc_noqs.tre
 ```
 
 1. Start julia by typing `julia` and then load packages.
