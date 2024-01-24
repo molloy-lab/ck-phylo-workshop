@@ -69,7 +69,7 @@ END;
 
 *Tip: Use the command `cat model-species-tree.tre` to see the newick string.*
 
-5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `java -jar PhyloNet.jar compute_loglk.nex`
+5. Run [PhyloNet](https://phylogenomics.rice.edu/html/phylonetTutorial.html) with the command `PhyloNet compute_loglk.nex`
 
 6. Convert the log-likelihood $x$ of the four topologies into a probability by evaluating the exponentional function $e^x$.
 
