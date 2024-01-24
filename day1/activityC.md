@@ -21,11 +21,11 @@ There are several benefits to quartet-based summary methods:
 4. Many fast and accurate quartet-based methods have been developed.
 
 ASTRAL, in particular, has had several versions since it was introduced in 2014.
-The lastest version, called ASTER, uses a different algorithmic approach that is more robust to missing data the previous one [[Zhang & Mirarab, 2022]](https://doi.org/10.1093/molbev/msac215).
+The lastest version, called ASTER, uses a different algorithmic approach than the earlier versions, which is more robust to missing data the previous one [[Zhang & Mirarab, 2022]](https://doi.org/10.1093/molbev/msac215).
 Recently, we introduced a yet another heuristic for MQSST, called TREE-QMC [[Han & Molloy, 2023]](https://doi.org/10.1101/gr.277629.122).
-TREE-QMC introduces a new algorithm that enables the Quartet Max Cut (QMC) approach by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to be executed directly on the input gene trees (rather than their extracted quartets); the outcome is scalability to large numbers of taxa without subsampling quartets. 
+TREE-QMC enables the Quartet Max Cut (QMC) approach by [Snir and Rao (2010)](https://doi.org/10.1109/tcbb.2008.133) to be executed directly on the input gene trees (rather than their extracted quartets); the outcome is scalability to large numbers of taxa without subsampling quartets. 
 TREE-QMC also improves accuracy for large and error-prone input gene trees via "quartet graph normalization".
-In simulations, these features make TREE-QMC as accurate as ASTER, and more accurate than ASTER in some model conditions, like large numbers of taxa (500-1000).
+In simulations, these features make TREE-QMC at least as accurate as ASTER and more accurate than ASTER in some model conditions, like large numbers of taxa (500-1000).
 On the other hand, ASTER is faster when using multi-threading and may be more accurate in scenarios not yet explored.
 In any case, for small data sets with accurate gene trees, like those being used in today's lab, all summary methods should perform well for both speed and accuracy.
 
