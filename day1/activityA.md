@@ -89,7 +89,7 @@ The challenge in the above example is creating tree topologies that could have h
 To build intuition on how this is done, restrict the above analysis to four taxa: `rhePen` (from clade A), `droNov` (from clade B1), `aptRow` (from clade B2), and `notPer` (from clade C); this produces the following trees: 
 
 ```
-st = (((rhePen,(aptRow,droNov):0.553644):0.008906),notPer);
+st = (notPer:7.436543,(rhePen:6.124807,(droNov:6.316124,aptRow:6.334034):0.553644):0.008906);
 
 gt1 = ((rhePen,(aptRow,droNov)),notPer);
 gt2 = ((rhePen,notPer),(aptRow,droNov));
