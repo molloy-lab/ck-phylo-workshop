@@ -12,7 +12,7 @@ To fill in the table below, let's divide-and-conquer into ~7 groups. If your gro
 
 | Data | Study / Group | Method Type | Method | Species Tree Topology | Probability under MSC model species tree from day 1 | 
 | --- | --- | --- | --- | --- | --- |
-| CNEE | group 1 | GT Summary | TREE-QMC / ASTRAL |  |  |
+| CNEE | group 1 | GT Summary | TREE-QMC / ASTRAL | `((((A,(B1,B2)),C),strCam),galGal)`  |  |
 | CNEE | group 2 | GT Summary | TREE-QMC-support |  |  |
 | CNEE | group 3 | GT Summary | TREE-QMC-length |  |  |
 | CNEE | group 4 | GT Summary | TREE-QMC-hybrid / ASTRAL-hybrid |  |  |
