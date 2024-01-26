@@ -25,8 +25,8 @@ Data
 | --- | --- |
 | CNEE gene trees with abayes support | [`../data/abayes-gene-trees/CNEE_abayes_gene_trees_sorted.tre`](../data/abayes-gene-trees/CNEE_abayes_gene_trees_sorted.tre) |
 | Intron gene trees with abayes support | [`../data/abayes-gene-trees/intron_abayes_gene_trees_sorted.tre`](../data/abayes-gene-trees/intron_abayes_gene_trees_sorted.tre) |
-| UCE gene trees with abaye support | [`../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted.tre`](../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted.tre) |
-| UCE gene trees with abayes support (minus 105 with homology errors) | [`../data/abayes-gene-trees`](../data/abayes-gene-trees) |
+| UCE gene trees with abaye support (minus 105 with homology errors) | [`../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted.tre`](../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted.tre) |
+| UCE gene trees with abayes support (plus 105 with homology errors) | [`../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted_plus105.tre`](../data/abayes-gene-trees/UCE_minus_105_abayes_gene_trees_sorted_plus105.tre) |
 
 
 
