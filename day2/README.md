@@ -28,7 +28,7 @@ To fill in the table below, let's divide-and-conquer into ~7 groups. If your gro
 | UCE +105 | group 4 | GT Summary | TREE-QMC-hybrid / ASTRAL-hybrid |  |  |
 | UCE +105 | Cloutier *et al.* (2019) | Concatenation | ExaML |  `(((((B1,C),B2),A),strCam),galGal);` | 0.0019 |
 | UCE -105 | group 1 | GT Summary | TREE-QMC / ASTRAL | `((((A,(B1,B2)),C),strCam),galGal)` |  |
-| UCE -105 | group 2 | GT Summary | TREE-QMC-support |  |  |
+| UCE -105 | group 2 | GT Summary | TREE-QMC-support | `((c,((b1,b2),a)),d);` |  |
 | UCE -105 | group 3 | GT Summary | TREE-QMC-length |  |  |
 | UCE -105 | group 4 | GT Summary | TREE-QMC-hybrid / ASTRAL-hybrid |  |  |
 | UCE -105 | Simmons *et al.* (2022) | Concatenation | Partitioned RAxML | `(((((B1,C),B2),A),strCam),galGal);` | 0.0019 |
