@@ -20,11 +20,23 @@ Data files
 
 Before you begin
 ---
-Change into the `day1` directory and copy the files listed below into it e.g. with the following commands.
+1. Clone this repository.
+```
+git clone https://github.com/molloy-lab/ck-phylo-workshop/
+```
+2. Change into this directory.
+```
+cd ck-phylo-workshop/day1
+```
+3. Copy the model species tree to this directory.
 ```
 cp ../data/simulations/model-species-tree.tre .
+```
+4. Copy the gene trees *simultated* from this model species tree into this directory.
+```
 cp ../data/simulations/simulated-gene-trees.tre .
 ```
+6. You are ready to do the activities!
 
 Activities
 ---
