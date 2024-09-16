@@ -7,7 +7,7 @@ GENE=$2  # Gene ID
 DIR="/Users/ekmolloy/Dropbox/tutorials/workshop-on-phylo/ck-phylo-workshop/data"
 
 # Do work
-cd $DIR/abayes-gene-trees/$TYPE
+cd $DIR/abayes-gene-trees/info/backup/$TYPE
 
 #pwd
 

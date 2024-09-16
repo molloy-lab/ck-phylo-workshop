@@ -13,11 +13,13 @@ for TYPE in ${TYPES[@]}; do
     cat tmp1.txt tmp2.txt ${TYPE}_alignment_info.csv
 done
 
-DIR="$DIR/abayes-gene-trees"
+DIR="$DIR/abayes-gene-trees/info/backup"
 
 for TYPE in ${TYPES[@]}; do
     cd $DIR/${TYPE}s
     pwd
+
+    cat *.csv > tmp2.txt
 
     if [ ! -e ${TYPE}_branch_support.csv ]; then
         cat *.csv > ${TYPE}_branch_support.csv
@@ -25,7 +27,7 @@ for TYPE in ${TYPES[@]}; do
 
     if [ ! -e ${TYPE}_branch_support_sorted.txt ]; then
         echo "TYPE,GENE,SAVG,SMED,SSTD,SMIN,SMAX" > tmp1.txt
-        cat *.csv > tmp2.txt
+        
         sed 's/,/ /g' tmp2.txt | \
             awk '{print $3,$2}' | \
             sort -r | \
@@ -33,8 +35,9 @@ for TYPE in ${TYPES[@]}; do
             >> ${TYPE}_branch_support_sorted.txt
 
         cat tmp1.txt tmp2.txt > ${TYPE}_branch_support.csv
-        rm tmp*.txt
     fi
+
+    rm tmp*.txt
 
     if [ ! -e ${TYPE}_abayes_gene_trees_sorted.tre ]; then
         GTRES=( $(awk '{print $2".tre.abayes"}' ${TYPE}_branch_support_sorted.txt) )
